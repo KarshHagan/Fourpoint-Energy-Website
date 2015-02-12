@@ -1,0 +1,211 @@
+nav {
+	background: url('/img/nav_bg.jpg') no-repeat center center;
+	@include bgCover;
+	padding: 20px 0 10px;
+	section {
+		@include outer-container;
+	}
+	.logo {
+		@include span-columns(2);
+		img {
+			background: url(/img/FourPoint_Logo.svg) no-repeat;
+			background-size: 154px 79px;
+			width: 154px;
+			height: 79px;
+			margin: 0 auto;
+			display: block;
+			z-index: 12;
+			position: relative;
+		}
+	}
+
+	.no-svg .logo img {
+		background: url('/img/FourPoint_Logo.png') no-repeat center center;
+	}
+	.nav_wrap {
+		@include span-columns(10);
+		position: relative;
+		height: auto;
+		overflow: visible;
+		min-height: 80px;
+		.mobile_nav_icon {
+			display: none;
+			font-weight: bold;
+			line-height: 18px;
+			z-index: 9999;
+			position: relative;
+			i {
+				font-size: 18px;
+				padding-left: 10px;
+			}
+			@media (max-width: 980px) {
+				display: inline-block;
+				color: $white;
+				position: absolute;
+				right: 20px;
+				top: 60px;
+			}
+		}
+		.main_nav_wrap {
+			display: block;
+			position: relative;
+			@include clearfix;
+			#main_nav {
+				position: absolute;
+				top: 60px;
+				-webkit-transform-style: preserve-3d; 
+				li {
+					display: inline-block;
+					margin: 0 20px;
+					a {
+						text-transform: uppercase;
+						font-weight: bold;
+					}
+				}
+				li.more {
+					a:after {
+						margin-left: 10px;
+						content: '\25BE';
+						color: white;
+						font-size: 24px;
+						@include transition (color .3s ease);
+					}
+					&:hover {
+						a:after {
+							color: $yellow;
+						}
+					}
+				    .submenu {
+				    	display: none;
+				    	position: absolute;
+				    	top: 30px;
+				    	line-height: 50px;
+				    	height: 50px;
+				    	width: 200%;
+				    	left: -50%;
+				    	background: $white;
+				    	background: $trans_white;
+				    	text-align: center;
+				    	li {
+				    		display: inline;
+				    		a {
+				    			color: $black;
+				    			&:after {
+				    				content: '';
+				    			}
+				    		}
+				    	}
+				    	@media (max-width: 980px) {
+			    			display: block;
+			    			position: relative;
+							right: 0;
+							left: auto;
+							top: 0;
+							line-height: 18px;
+							height: auto;
+							width: auto;
+							text-align: right;
+							margin: 5px auto 10px;
+							li {
+								display: block;
+								a {
+									color: white;
+								}
+							}
+			    		}
+				    }
+				}
+			}
+			@media (max-width: 980px) {
+				margin-top: 60px;
+				#main_nav {
+					display: none;
+					text-align: right;
+					top: 0;
+					padding: 30px 0 20px;
+					position: relative;
+					li {
+						display: block;
+					}
+				}
+			}
+		}
+		#mobile_menu {
+			cursor: pointer;
+		}
+		.utility {
+			position: absolute;
+			top: 0;
+			right: 0;
+			div, a {
+				display: inline-block;
+				margin: 0 20px;
+				color: $light_gray;
+				font-weight: bold;
+			}
+			div {
+				margin: 0;
+			}
+			.search-box {
+			  @include transition (width $tl, border-radius $tl, background $tl, box-shadow $tl);
+			  width: 40px;
+			  height: 40px;
+			  border-radius: 20px;
+			  border: none;
+			  cursor: pointer;
+			  background: transparent;
+			  & + label .search-icon {    color: $light_gray    }
+			  &:hover {
+			    color: white;
+			    background: $black;
+			    & + label .search-icon {    color: white    }
+			  }
+			  &:focus {
+			    @include transition (width $tl cubic-bezier(0,1.22,.66,1.39), border-radius $tl, background $tl);
+			    border: none;outline: none;
+			    box-shadow: none;
+			    padding-left: 15px;
+			    cursor: text;
+			    width: 300px;
+			    border-radius: auto;
+			    background: $trans_white;
+			    color: white;
+			    & + label .search-icon {    color: black;    }
+			  }
+			  &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
+			}
+
+			#search-submit {
+			  position: absolute;
+			  left: -5000px;
+			}
+
+			.search-icon {
+			  position: relative;
+			  left: -30px;
+			  color: white;
+			  cursor: pointer;
+			}
+
+		}
+	}
+}
+.login {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: #5b9441;
+	text-align: right;
+	height: 50px;
+	a {
+		color: #fff;
+		line-height: 50px;
+		padding-right: 2%;
+		font-weight: bold;
+		&:hover {
+			color: #fff;
+			text-decoration: underline;
+		}
+	}
+}

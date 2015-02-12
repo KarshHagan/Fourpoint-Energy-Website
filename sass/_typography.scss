@@ -1,0 +1,56 @@
+h1, h2 {
+	color: $fourpoint_blue;
+}
+
+h1, h2, h3, h6 {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+	font-size: 24px;	
+}
+
+ul, ol {
+  margin-left: 1.5em;
+  text-align: left;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  @include transition(color .3s ease-in-out);
+  &:hover, &:active {
+    color: $yellow;
+    text-decoration: none;
+  }
+  img {
+    border: none;
+  }
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.4em;
+  margin: 30px auto;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  padding-left: 1em;
+  margin-left: 1em;
+  border-left: 1px solid #333333;
+  font-style: italic;
+}

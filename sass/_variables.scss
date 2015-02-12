@@ -1,0 +1,54 @@
+$dark_gray: #2e2e2d;
+$medium_gray: #868586;
+$light_gray: #cbcbca;
+$black: #000000;
+$white: #ffffff;
+$trans_white: rgba(255, 255, 255, 0.3);
+$trans_black: rgba(0, 0, 0, 0.5);
+$yellow: #ffc20e;
+$fourpoint_blue: #00a8e2;
+$tl: 0.6s; // SEARCH transition length
+$nav_break: 980px;
+
+@mixin bgCover {
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin btnMain {
+	background: #f17a54;
+	@include background-image(linear-gradient(#f17a54 0, #e36a44 100%));
+	font-family: 'Arvo', serif;
+	margin: 20px auto;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 10px 8px;
+	display: inline-block;
+	position: relative;
+	z-index: 18;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: -webkit-box-shadow 0.3s ease;
+	-moz-transition: -moz-box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+	&:hover {
+		background: #e36a44;
+		@include background-image(linear-gradient(#e36a44 0, #ce501a 100%));
+		color: white;
+		text-decoration: none;
+		-webkit-box-shadow: 0 0 3px 2px #999999;
+	    -moz-box-shadow: 0 0 3px 2px #999999;
+	    box-shadow: 0 3px 2px #999999;
+	}
+}
