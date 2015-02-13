@@ -15,14 +15,14 @@
   	<meta property="og:image" content="<?php echo $fbShareImg; ?>" />
   	
   	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-	<script type="text/javascript" src="/js/libs/modernizr.js"></script>
+	<script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<script type="text/javascript" src="/assets/js/libs/modernizr.js"></script>
 
-	<script type="text/javascript" src="/js/nav.js"></script>
+	<script type="text/javascript" src="/assets/js/nav.js"></script>
 	
 	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -39,11 +39,11 @@
 		<nav>
 			<section>
 				<a class="logo" href="/">
-					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="FourPoint Energy Logo">
+					<img src="/assets/img/FourPoint_Logo.svg" alt="FourPoint Energy Logo">
 				</a>
 				<div class="nav_wrap">
 					<div class="utility">
-						<div>
+						<div class="search_wrap">
 							<form class="search-container" action="">
 							  <input id="search-box" type="text" class="search-box" name="q" />
 							  <label for="search-box"><i class="fa fa-search search-icon"></i></label>
@@ -71,6 +71,17 @@
 					    	<li><a href="#">Investors</a></li>
 					    	<li><a href="#">News</a></li>
 					    	<li><a href="#">Careers</a></li>
+							<li class="mobile_utility"><a href="#">Contact</a></li>
+							<li class="mobile_utility"><a href="#">Leasing/Selling</a></li>
+							<li class="mobile_utility">
+						    	<div class="search_wrap">
+									<form class="search-container" action="">
+									  <input id="search-box" type="text" class="search-box" name="q" />
+									  <label for="search-box"><i class="fa fa-search search-icon"></i></label>
+									  <input type="submit" id="search-submit" />
+									</form>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>

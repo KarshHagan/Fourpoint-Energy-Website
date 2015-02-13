@@ -1,8 +1,8 @@
 $(document).ready(function() {
   var menu = $('#main_nav');
   var menuToggle = $('#mobile_menu');
-  var signUp = $('.sign-up');
-  var aboutLink = $('.more');
+  var navWrap = $('nav');
+  var moreLink = $('.more');
   var subMenu = $('.submenu');
 
   $(menuToggle).on('click', function(e) {
@@ -14,13 +14,11 @@ $(document).ready(function() {
     });
   });
 
-  $(aboutLink).on('click', function(e) {
+  $(moreLink).on('click', function(e) {
     e.preventDefault();
-    subMenu.slideToggle(function(){
-      if(menu.is(':hidden')) {
-        menu.removeAttr('style');
-      } 
-    });
+    var self = $(this).find(subMenu);
+    self.toggleClass('show_submenu');
+    navWrap.toggleClass('expand_down');
   });
 
  
