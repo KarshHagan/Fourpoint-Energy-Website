@@ -16,13 +16,12 @@
   	
   	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/stroll.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 	<script type="text/javascript" src="/assets/js/libs/modernizr.js"></script>
-
-	<script type="text/javascript" src="/assets/js/nav.js"></script>
 	
 	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -66,10 +65,25 @@
 					    			<li><a href="#">Management Team</a></li>
 					    		</ul>
 					    	</li>
-					    	<li><a href="#">Business & Community</a></li>
+					    	<li class="more"><a href="#">Business & Community</a>
+					    		<ul class="submenu">
+					    			<li><a href="#">Business Strategy</a></li>
+					    			<li><a href="#">Community Promise</a></li>
+					    			<li><a href="#">Health, Safety &amp; Environment</a></li>
+					    			<li><a href="#">Industry Affiliations</a></li>
+					    		</ul>
+					    	</li>
 					    	<li><a href="#">Interest owners</a></li>
 					    	<li><a href="#">Investors</a></li>
-					    	<li><a href="#">News</a></li>
+					    	<li class="more"><a href="#">News</a>
+					    		<ul class="submenu">
+					    			<li><a href="#">Features</a></li>
+					    			<li><a href="#">Press Releases</a></li>
+					    			<li><a href="#">Presentations &amp; Fact Sheet</a></li>
+					    			<li><a href="#">The Natural Gas Story</a></li>
+					    			<li><a href="#">Events & Media Gallery</a></li>
+					    		</ul>
+					    	</li>
 					    	<li><a href="#">Careers</a></li>
 							<li class="mobile_utility"><a href="#">Contact</a></li>
 							<li class="mobile_utility"><a href="#">Leasing/Selling</a></li>

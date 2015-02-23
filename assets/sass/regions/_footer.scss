@@ -48,7 +48,7 @@ footer {
 				}
 			}
 		}
-		@media (max-width: $nav_break) {
+		@include media($tablet_large) {
 			.legal, .footer_icon, .social {
 				@include span-columns(12);
 				ul {

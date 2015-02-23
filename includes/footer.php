@@ -25,6 +25,8 @@
 	
 
 	<script src="/assets/js/libs.min.js"></script>
+	<script src="/assets/js/nav.js"></script>
+	<script src="/assets/js/libs/stroll.min.js"></script>
 	<script src="/assets/js/main.js"></script>
 
 	</body>

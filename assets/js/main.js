@@ -48,6 +48,32 @@ $(document).ready(function() {
   		event.preventDefault();
 	    $('html,body').animate({ scrollTop: $('#first').offset().top }, 'slow');        
 	});
+
+	// HISTORY SCROLL EFFECTS
+
+	// stroll.bind( '#flipper' );
+
+	var win = $(window);
+
+	var allMods = $("#flipper li");
+
+	allMods.each(function(i, el) {
+	  var el = $(el);
+	  if (el.visible(true)) {
+	    el.addClass("already-visible"); 
+	  } 
+	});
+
+	win.scroll(function(event) {
+	  
+	  allMods.each(function(i, el) {
+	    var el = $(el);
+	    if (el.visible(true)) {
+	      el.addClass("come-in"); 
+	    } 
+	  });
+	  
+	});
 	
 });
 	

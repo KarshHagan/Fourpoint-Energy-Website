@@ -1,5 +1,5 @@
 nav {
-	background: url('/assets/img/nav_bg.jpg') no-repeat top center;
+	background: #000 url('/assets/img/nav_bg.jpg') no-repeat top center;
 	background-size: 100% auto;
 	padding: 20px 0 10px;
 	@include transition(padding .3s ease);
@@ -40,7 +40,7 @@ nav {
 				font-size: 18px;
 				padding-left: 10px;
 			}
-			@media (max-width: $nav_break) {
+			@include media($tablet_large) {
 				display: inline-block;
 				color: $white;
 				position: absolute;
@@ -71,7 +71,7 @@ nav {
 				}
 				.mobile_utility {
 					display: none;
-					@media (max-width: $nav_break) {
+					@include media($tablet_large) {
 						display: block;
 					}
 				}
@@ -80,6 +80,7 @@ nav {
 						margin-left: 10px;
 						content: '\25BE';
 						color: white;
+						color: rgba(255,255,255,.6);
 						font-size: 24px;
 						@include transition (color .3s ease);
 					}
@@ -112,7 +113,7 @@ nav {
 				    			}
 				    		}
 				    	}
-				    	@media (max-width: $nav_break) {
+				    	@include media($tablet_large) {
 			    			display: block;
 			    			position: relative;
 							right: 0;
@@ -133,10 +134,14 @@ nav {
 				    .show_submenu {
 				    	height: auto;
 				    	max-height: 50px;
+				    	@include media($tablet_large) {
+				    		@include transition(max-height .5s ease);
+				    		max-height: 250px;
+				    	}
 				    }
 				}
 			}
-			@media (max-width: $nav_break) {
+			@include media($tablet_large) {
 				#main_nav {
 					display: none;
 					text-align: right;
@@ -162,19 +167,19 @@ nav {
 				margin: 0 20px;
 				color: $light_gray;
 				font-weight: bold;
-				@media (max-width: $nav_break) {
+				@media (max-width: $tablet_large) {
 					display: none;
 				}
 			}
 			.btn {
-				@media (max-width: $nav_break) {
+				@media (max-width: $tablet_large) {
 					display: block;
 				}
 			}
 		}
 	}
-	@media (max-width: $nav_break) {
-		@include bgCover;
+	@media (max-width: $tablet_large) {
+		background: #000 url('/assets/img/nav_bg_mobile.jpg') no-repeat top center;
 	}
 }
 

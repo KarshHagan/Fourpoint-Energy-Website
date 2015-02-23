@@ -1,14 +1,3 @@
-$dark_gray: #2e2e2d;
-$medium_gray: #868586;
-$light_gray: #cbcbca;
-$black: #000000;
-$white: #ffffff;
-$trans_white: rgba(255, 255, 255, 0.2);
-$trans_black: rgba(0, 0, 0, 0.5);
-$yellow: #ffc20e;
-$fourpoint_blue: #00a8e2;
-$tl: 0.6s; // SEARCH transition length
-$nav_break: 980px;
 
 @mixin bgCover {
   -webkit-background-size: cover !important;
@@ -22,6 +11,44 @@ $nav_break: 980px;
   -moz-border-radius: $radius;
   -o-border-radius: $radius;
   border-radius: $radius;
+}
+
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin third_btn {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	color: $fourpoint_blue;
+	padding-left: 30px;
+	line-height: 12px;
+	position: relative;
+	font-weight: 700;
+	@include transition(color .3 ease);
+	&:before {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left: 0;
+		top: 5px;
+		@include transition(background .3 ease);
+		background: $fourpoint_blue url('/assets/img/icons/btn_arrows.svg') no-repeat center center;
+		border-radius: 50%;
+	}
+	&:hover {
+		color: $yellow;
+		&:before { 
+			background: $yellow url('/assets/img/icons/btn_arrows.svg') no-repeat center center;
+		}
+	}
 }
 
 @mixin btnMain {
