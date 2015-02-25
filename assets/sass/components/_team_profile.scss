@@ -7,6 +7,7 @@
         height: auto;
         position: relative;
         margin: 0 auto 50px;
+        overflow: hidden;
         @include clearfix;
         img {
             width: 55%;
@@ -28,6 +29,35 @@
                 @include vertical-align;
                 h3 {
                     color: darken($light_gray, 20%);
+                }
+            }
+        }
+        @include media(tablet) {
+            img {
+                width: 115%;
+                margin: 0 auto;
+                padding: 0;
+                float: none;
+                display: block;
+                margin-left: -15%;
+            }
+            .team_title {
+                height: auto;
+                width: 100%;
+                display: block;
+                position: relative;
+                display: block;
+                span {
+                    right: auto;
+                    display: block;
+                    text-align: center;
+                    padding: 60px 0;
+                    position: relative;
+                    top: 0;
+                    @include transform(translateY(0));
+                    h3 {
+                        color: darken($light_gray, 20%);
+                    }
                 }
             }
         }

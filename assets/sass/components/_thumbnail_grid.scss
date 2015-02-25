@@ -13,13 +13,13 @@
             display: block;
             padding: 0;
             margin: 0 auto;
-            @include media($tablet_large) {
+            @include media(tablet_large) {
                 width: 33.33333333337%
             }
-            @include media($tablet) {
+            @include media(tablet) {
                 width: 50%
             }
-            @include media($mobile) {
+            @include media(mobile) {
                 width: 100%
             }
             a {

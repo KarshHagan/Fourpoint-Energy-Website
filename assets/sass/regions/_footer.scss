@@ -11,19 +11,19 @@ footer {
 			}
 		}
 		.legal {
-			@include span-columns(5);
+			width: 41.667%;
 			text-align: left;
 			padding-top: 40px;
 		}
 		.footer_icon {
-			@include span-columns(2);
+			width: 16%;
 			img {
 				width: 100px; 
 				height: 100px;
 			}
 		}
 		.social {
-			@include span-columns(5);
+			width: 41.667%;
 			padding-top: 30px;
 			ul {
 				text-align: right;
@@ -48,9 +48,9 @@ footer {
 				}
 			}
 		}
-		@include media($tablet_large) {
+		@include media(tablet_large) {
 			.legal, .footer_icon, .social {
-				@include span-columns(12);
+				width: 100%;
 				ul {
 					text-align: center;
 				}

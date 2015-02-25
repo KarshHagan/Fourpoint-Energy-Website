@@ -2,8 +2,6 @@
 @import "sass/dependencies/mixins";
 @import "sass/helpers/resets";
 @import "sass/bourbon/bourbon";
-@import "sass/dependencies/grid_settings";
-@import "sass/neat/neat";
 @import "sass/components/animation";
 @import "sass/foundation/global";
 @import "sass/foundation/typography";
@@ -15,4 +13,5 @@
 @import "sass/components/content_stack";
 @import "sass/components/thumbnail_grid";
 @import "sass/components/team_profile";
+@import "sass/components/forms";
 

@@ -40,7 +40,7 @@ nav {
 				font-size: 18px;
 				padding-left: 10px;
 			}
-			@include media($tablet_large) {
+			@include media(tablet_large) {
 				display: inline-block;
 				color: $white;
 				position: absolute;
@@ -71,7 +71,7 @@ nav {
 				}
 				.mobile_utility {
 					display: none;
-					@include media($tablet_large) {
+					@include media(tablet_large) {
 						display: block;
 					}
 				}
@@ -113,7 +113,7 @@ nav {
 				    			}
 				    		}
 				    	}
-				    	@include media($tablet_large) {
+				    	@include media(tablet_large) {
 			    			display: block;
 			    			position: relative;
 							right: 0;
@@ -134,14 +134,14 @@ nav {
 				    .show_submenu {
 				    	height: auto;
 				    	max-height: 50px;
-				    	@include media($tablet_large) {
+				    	@include media(tablet_large) {
 				    		@include transition(max-height .5s ease);
 				    		max-height: 250px;
 				    	}
 				    }
 				}
 			}
-			@include media($tablet_large) {
+			@include media(tablet_large) {
 				#main_nav {
 					display: none;
 					text-align: right;
@@ -167,18 +167,18 @@ nav {
 				margin: 0 20px;
 				color: $light_gray;
 				font-weight: bold;
-				@media (max-width: $tablet_large) {
+				@include media(tablet_large) {
 					display: none;
 				}
 			}
 			.btn {
-				@media (max-width: $tablet_large) {
+				@include media(tablet_large) {
 					display: block;
 				}
 			}
 		}
 	}
-	@media (max-width: $tablet_large) {
+	@include media(tablet_large) {
 		background: #000 url('/assets/img/nav_bg_mobile.jpg') no-repeat top center;
 	}
 }

@@ -1,6 +1,6 @@
 @include keyframes(come-in) {
   to { 
-  	@include transform(translateX(0)); 
+  	@include transform(rotateX(0deg)); 
   	opacity: 1;
   }
 }
