@@ -45,10 +45,13 @@
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	color: $fourpoint_blue;
+	padding: 0;
 	padding-left: 30px;
 	line-height: 12px;
 	position: relative;
 	font-weight: 700;
+	line-height: 22px;
+	display: block;
 	@include transition(color .3 ease);
 	&:before {
 		content: '';
@@ -56,8 +59,8 @@
 		width: 20px;
 		height: 20px;
 		left: 0;
-		top: 5px;
-		@include transition(background .3 ease);
+		top: 0px;
+		@include transition(all .3 ease);
 		background: $fourpoint_blue url('/assets/img/icons/btn_arrows.svg') no-repeat center center;
 		border-radius: 50%;
 	}
@@ -69,31 +72,17 @@
 	}
 }
 
-@mixin btnMain {
-	background: #f17a54;
-	@include background-image(linear-gradient(#f17a54 0, #e36a44 100%));
-	font-family: 'Arvo', serif;
-	margin: 20px auto;
-	text-decoration: none;
-	color: white;
+@mixin first_btn {
+	background: $fourpoint_blue;
+	padding: 15px 30px;
+	border-radius: 2px;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	padding: 10px 8px;
-	display: inline-block;
-	position: relative;
-	z-index: 18;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-transition: -webkit-box-shadow 0.3s ease;
-	-moz-transition: -moz-box-shadow 0.3s ease;
-	transition: box-shadow 0.3s ease;
+	color: $white;
+	margin: 0 auto;
+	display: block;
+	@include transition(background .3s ease);
 	&:hover {
-		background: #e36a44;
-		@include background-image(linear-gradient(#e36a44 0, #ce501a 100%));
-		color: white;
-		text-decoration: none;
-		-webkit-box-shadow: 0 0 3px 2px #999999;
-	    -moz-box-shadow: 0 0 3px 2px #999999;
-	    box-shadow: 0 3px 2px #999999;
+		background: darken($fourpoint_blue, 30%);
 	}
 }

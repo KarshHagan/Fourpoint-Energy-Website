@@ -1,3 +1,128 @@
-form {
- 
+.form_wrap {
+	@include outer-container;
+	padding: 80px 0;
+	div {
+		@include clearfix;
+		margin: 15px auto;
+		label, input {
+			display: block;
+			float: left;
+		}
+		input, textarea, button {
+		  padding: 0.7em;
+		  border: none;
+		  border-radius: 2px;
+		}
+		input[type="text"], input[type="email"], textarea, select {
+		  margin: 0 0 1em;
+		  border: 1px solid darken($form_fill, 10%);
+		  outline: none;
+		  background: $form_fill;
+		}
+		.form_select, .upload_select {
+			background: $form_fill;
+			border: 1px solid darken($form_fill, 10%);
+			color: darken($form_fill, 30%);;
+			border-radius: 2px;
+			padding: 0.7em;
+			display: inline-block; 
+			max-width: 150px;
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+			margin-left: 20px;
+			font: normal 11px/normal 'Lucida Grande';
+			cursor: pointer;
+			&:hover {
+				background: darken($form_fill, 5%);
+			}
+			select { 
+				-webkit-appearance: none;
+				width: 100%;
+			}
+			&:after { 
+				content: "▼";
+				color: darken($form_fill, 20%);
+				font-size: 12px;
+				margin-top: -7px;
+				position: absolute;
+				top: 50%; 
+				right: 10px;
+				vertical-align: middle;
+				z-index: 1;
+			}
+
+		  .select {
+		    background-color: transparent;
+		    border: 0;
+		    color: #fff;
+		    padding: 25px 20px;
+		    position: absolute;
+		    left: 0; top: 0; right: 0; bottom: 0;
+		    z-index: 2; 
+		    
+		    option { background: $light_gray; }
+		  }
+		}
+		.upload_select {
+			float: left;
+			margin-left: 0;
+			&:after {
+				content: "+";
+				color: darken($form_fill, 30%);
+				font-weight: bold;
+			}
+		}
+		.upload_label {
+			display: inline-block;
+		}
+		label {
+			width: 30%;
+			text-align: right;
+			padding: 0.7em 25px;
+		}
+		input, textarea {
+			width: 70%;
+			max-width: 450px;
+		}
+		textarea {
+			min-height: 80px;
+		}
+		.city_input {
+			max-width: 280px;
+		}
+		@include media(tablet) {
+			input, label, input[type="text"], input[type="email"], textarea, select, .form_select, .upload_select, .upload_label {
+				float: none;
+				width: 90%;
+				margin: 0 auto;
+				max-width: 450px;
+				text-align: left;
+				display: block;
+			}
+			label {
+				padding: 0.7em 0;
+			}
+			.form_select {
+				margin: 0.7em auto;
+			}
+		}
+	}
+	.submit {
+		width: 70%;
+		margin-left: 30%;
+		input {
+			@include first_btn;
+			outline: none;
+			width: auto;
+		}
+		@include media(tablet) {
+			width: 90%;
+			max-width: 450px;
+			margin: 0 auto;
+			input {
+				float: left;
+			}
+		}
+	}
 }

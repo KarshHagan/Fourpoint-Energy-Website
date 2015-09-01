@@ -4,6 +4,7 @@ $(document).ready(function() {
   var navWrap = $('nav');
   var moreLink = $('.more');
   var subMenu = $('.submenu');
+  var subMenuExpanded = $('.show_submenu');
 
   $(menuToggle).on('click', function(e) {
     e.preventDefault();
@@ -17,8 +18,22 @@ $(document).ready(function() {
   $(moreLink).on('click', function(e) {
     e.preventDefault();
     var self = $(this).find(subMenu);
-    self.toggleClass('show_submenu');
-    navWrap.toggleClass('expand_down');
+        currentOpen = navWrap.find(subMenuExpanded);
+
+    if (navWrap.hasClass('expand_down')) {
+      currentOpen.removeClass('show_submenu');
+      self.toggleClass('show_submenu');
+      navWrap.toggleClass('expand_down');
+    }    
+
+    else if (self.hasClass('show_submenu')) {
+      self.toggleClass('show_submenu');
+      navWrap.toggleClass('expand_down');
+    }
+    else  {
+      self.toggleClass('show_submenu');
+      navWrap.toggleClass('expand_down');
+    }
   });
 
  

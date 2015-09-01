@@ -67,6 +67,7 @@ nav {
 					a {
 						text-transform: uppercase;
 						font-weight: bold;
+						display: block;
 					}
 				}
 				.mobile_utility {
@@ -108,6 +109,7 @@ nav {
 				    		display: inline;
 				    		a {
 				    			color: $white;
+				    			display: inline;
 				    			&:after {
 				    				content: '';
 				    			}
@@ -127,6 +129,7 @@ nav {
 								display: block;
 								a {
 									color: white;
+									margin: 8px 0;
 								}
 							}
 			    		}

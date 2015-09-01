@@ -74,6 +74,18 @@ $(document).ready(function() {
 	  });
 	  
 	});
+
 	
 });
+
+
+// MAP IFRAME RESIZE PAGE
+
+// var frame = $('#iframe');
+
+// frame.load(resizeIframe);
+// function resizeIframe() {
+//     frame.height(frame.contents().height());
+//     frame.height(frame.contents().height());
+// }
 	

@@ -3,6 +3,7 @@ footer {
 	padding: 25px 0;
 	section {
 		@include outer-container;
+		@include clearfix;
 		ul {
 			li {
 				display: inline-block;
@@ -12,11 +13,13 @@ footer {
 		}
 		.legal {
 			width: 41.667%;
+			float: left;
 			text-align: left;
 			padding-top: 40px;
 		}
 		.footer_icon {
 			width: 16%;
+			float: left;
 			img {
 				width: 100px; 
 				height: 100px;
@@ -24,6 +27,7 @@ footer {
 		}
 		.social {
 			width: 41.667%;
+			float: left;
 			padding-top: 30px;
 			ul {
 				text-align: right;
