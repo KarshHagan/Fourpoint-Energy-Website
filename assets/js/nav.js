@@ -15,8 +15,8 @@ $(document).ready(function() {
     });
   });
 
-  $(moreLink).on('click', function(e) {
-    e.preventDefault();
+  $(moreLink).on('click', function() {
+    // e.preventDefault();
     var self = $(this).find(subMenu);
         currentOpen = navWrap.find(subMenuExpanded);
 

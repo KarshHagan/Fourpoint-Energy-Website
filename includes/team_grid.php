@@ -12,7 +12,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="/george-solich/">
 				<img src="/assets/img/team/tad-herz-thumb.jpg" alt="img01"/>
 				<span></span>
 				<div>
@@ -23,7 +23,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="/george-solich/">
 				<img src="/assets/img/team/kamil-tazi-thumb.jpg" alt="img01"/>
 				<span></span>
 				<div>
@@ -34,7 +34,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a href="/george-solich/">
 				<img src="/assets/img/team/frank-nessinger-thumb.jpg" alt="img01"/>
 				<span></span>
 				<div>

@@ -58,11 +58,11 @@
 						<ul id="main_nav">
 					    	<li class="more"><a href="#">about</a>
 					    		<ul class="submenu">
-					    			<li><a href="#">Our History</a></li>
+					    			<li><a href="/our-history">Our History</a></li>
 					    			<li><a href="#">Who We Are</a></li>
-					    			<li><a href="#">Areas of Operation</a></li>
+					    			<li><a href="/areas-of-operation">Areas of Operation</a></li>
 					    			<li><a href="#">Business Opportunities</a></li>
-					    			<li><a href="#">Management Team</a></li>
+					    			<li><a href="/management-team">Management Team</a></li>
 					    		</ul>
 					    	</li>
 					    	<li class="more"><a href="#">Business & Community</a>
@@ -70,7 +70,7 @@
 					    			<li><a href="#">Business Strategy</a></li>
 					    			<li><a href="#">Community Promise</a></li>
 					    			<li><a href="#">Health, Safety &amp; Environment</a></li>
-					    			<li><a href="#">Industry Affiliations</a></li>
+					    			<li><a href="/industry-affiliations">Industry Affiliations</a></li>
 					    		</ul>
 					    	</li>
 					    	<li><a href="#">Interest owners</a></li>
@@ -78,13 +78,13 @@
 					    	<li class="more"><a href="#">News</a>
 					    		<ul class="submenu">
 					    			<li><a href="#">Features</a></li>
-					    			<li><a href="#">Press Releases</a></li>
-					    			<li><a href="#">Presentations &amp; Fact Sheet</a></li>
+					    			<li><a href="/press-releases">Press Releases</a></li>
+					    			<li><a href="/frequently-asked-questions">Presentations &amp; Fact Sheet</a></li>
 					    			<li><a href="#">The Natural Gas Story</a></li>
 					    			<li><a href="#">Events & Media Gallery</a></li>
 					    		</ul>
 					    	</li>
-					    	<li><a href="#">Careers</a></li>
+					    	<li><a href="/join-our-team">Careers</a></li>
 							<li class="mobile_utility"><a href="#">Contact</a></li>
 							<li class="mobile_utility"><a href="#">Leasing/Selling</a></li>
 							<li class="mobile_utility">
