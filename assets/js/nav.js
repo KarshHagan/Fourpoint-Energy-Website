@@ -16,23 +16,35 @@ $(document).ready(function() {
   });
 
   $(moreLink).on('click', function() {
-    // e.preventDefault();
     var self = $(this).find(subMenu);
         currentOpen = navWrap.find(subMenuExpanded);
 
-    if (navWrap.hasClass('expand_down')) {
-      currentOpen.removeClass('show_submenu');
+    // if nothing is open, open clicked, slide down nav
+    if (!navWrap.hasClass('expand_down')) {
       self.toggleClass('show_submenu');
       navWrap.toggleClass('expand_down');
     }    
 
+    // close the opened one if it's clicked while open
     else if (self.hasClass('show_submenu')) {
       self.toggleClass('show_submenu');
       navWrap.toggleClass('expand_down');
     }
-    else  {
-      self.toggleClass('show_submenu');
-      navWrap.toggleClass('expand_down');
+
+    // if one is open, then you click another one, close current and open new one.
+    else if (navWrap.hasClass('expand_down') && $('.submenu').hasClass('show_submenu'))  {
+
+      // close everything
+      $('.submenu').removeClass('show_submenu');
+      currentOpen.removeClass('show_submenu');
+      self.removeClass('show_submenu');
+      navWrap.removeClass('expand_down');
+
+      // open everything
+      currentOpen.addClass('show_submenu');
+      self.addClass('show_submenu');
+      navWrap.addClass('expand_down');
+
     }
   });
 

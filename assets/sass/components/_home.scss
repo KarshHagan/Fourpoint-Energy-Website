@@ -1,0 +1,49 @@
+.slider {
+	height: 400px;
+	background-image: url(../img/map_perspective.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.button {
+	@include first_btn;
+}
+
+.panel {
+	h1 {
+		color: $dark_gray;
+	}
+}
+
+.panel-gray {
+	background-color: $dark_gray;
+
+	h1 {
+		color: $white;
+	}
+}
+
+.panel-white {
+	background-color: $white;
+}
+
+.panel-blue {
+	background-color: $fourpoint_blue;
+	color: $white;
+
+	h1 {
+		color: $white;
+	}
+}
+
+.home-img-full {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.experience-img {
+	background-image: url(../img/map_perspective.jpg);
+}

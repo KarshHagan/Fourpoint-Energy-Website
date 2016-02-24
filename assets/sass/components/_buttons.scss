@@ -10,3 +10,15 @@
     color: $trans_white;
   }
 }
+.btn-white {
+  background-color: $white !important;
+  color: $fourpoint_blue !important;
+  border: 1px solid $fourpoint_blue !important;
+  @include transition(background 0.3s ease);
+  &:hover {
+    background: transparent !important;
+    border-color: $white !important;
+    color: $white !important;
+    @include transition(background 0.3s ease);
+  }
+}

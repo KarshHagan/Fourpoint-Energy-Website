@@ -81,8 +81,10 @@
 	color: $white;
 	margin: 0 auto;
 	display: block;
+	border: none;
+	cursor: pointer;
 	@include transition(background .3s ease);
 	&:hover {
-		background: darken($fourpoint_blue, 30%);
+		background: darken($fourpoint_blue, 10%);
 	}
 }

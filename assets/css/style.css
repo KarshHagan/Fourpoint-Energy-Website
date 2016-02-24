@@ -86,7 +86,8 @@ html {
 
 img {
   margin: 0 auto;
-  display: block; }
+  display: block;
+  max-width: 100%; }
 
 h1, h2 {
   color: #00a8e2; }
@@ -173,8 +174,23 @@ blockquote {
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: rgba(255, 255, 255, 0.2); }
 
+.btn-white {
+  background-color: #ffffff !important;
+  color: #00a8e2 !important;
+  border: 1px solid #00a8e2 !important;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+  .btn-white:hover {
+    background: transparent !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    transition: background 0.3s ease; }
+
 nav {
-  background: #000 url("/assets/img/nav_bg.jpg") no-repeat top center;
+  background: #000 url("/assets/img/nav_bg_160.jpg") no-repeat top center;
   background-size: 100% auto;
   padding: 20px 0 10px;
   -webkit-transition: padding 0.3s ease;
@@ -452,12 +468,12 @@ footer {
       footer section .social {
         padding-top: 10px; } }
 
-header {
+header, .text-block {
   padding: 100px 0;
   text-align: center;
   background: #eceae7;
   width: 100%; }
-  header p {
+  header p, .text-block p {
     width: 90%;
     max-width: 500px; }
 
@@ -961,13 +977,15 @@ header {
       color: #ffffff;
       margin: 0 auto;
       display: block;
+      border: none;
+      cursor: pointer;
       -webkit-transition: background 0.3s ease;
       -moz-transition: background 0.3s ease;
       transition: background 0.3s ease;
       outline: none;
       width: auto; }
       .form_wrap .submit input:hover {
-        background: #003649; }
+        background: #0082af; }
     @media (max-width: 768px) {
       .form_wrap .submit {
         width: 90%;
@@ -1044,5 +1062,55 @@ header {
       .copy_split section article, .copy_split section aside {
         width: 100%;
         float: none; } }
+
+.slider {
+  height: 400px;
+  background-image: url(../img/map_perspective.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.button {
+  background: #00a8e2;
+  padding: 15px 30px;
+  border-radius: 2px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  transition: background 0.3s ease; }
+  .button:hover {
+    background: #0082af; }
+
+.panel h1 {
+  color: #2e2e2d; }
+
+.panel-gray {
+  background-color: #2e2e2d; }
+  .panel-gray h1 {
+    color: #ffffff; }
+
+.panel-white {
+  background-color: #ffffff; }
+
+.panel-blue {
+  background-color: #00a8e2;
+  color: #ffffff; }
+  .panel-blue h1 {
+    color: #ffffff; }
+
+.home-img-full {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.experience-img {
+  background-image: url(../img/map_perspective.jpg); }
 
 /*# sourceMappingURL=style.css.map */
