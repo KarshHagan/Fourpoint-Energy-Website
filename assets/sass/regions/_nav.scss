@@ -45,7 +45,7 @@ nav {
 				color: $white;
 				position: absolute;
 				right: 20px;
-				top: 60px;
+				top: 55px;
 			}
 		}
 		.main_nav_wrap {
@@ -149,10 +149,11 @@ nav {
 					display: none;
 					text-align: right;
 					top: 0;
-					padding: 30px 0 20px;
+					// padding: 15px 0;
 					position: relative;
 					li {
 						display: block;
+						margin: 8px 20px;
 					}
 				}
 			}
@@ -204,10 +205,13 @@ nav {
   border: none;
   cursor: pointer;
   background: transparent;
+  // position: absolute;
+  // right: 34px;
+  // bottom: 17px;
   & + label .search-icon {    color: $light_gray    }
   &:hover {
     color: white;
-    background: $black;
+    // background: $black;
     & + label .search-icon {    color: white    }
   }
   &:focus {
@@ -220,7 +224,7 @@ nav {
     border-radius: auto;
     background: $trans_white;
     color: white;
-    & + label .search-icon {    color: black;    }
+    & + label .search-icon {    color: $white;    }
   }
   &:not(:focus) {    text-indent:-5000px;    } // for more-graceful falling back (:not browsers likely support indent)
 }
@@ -235,9 +239,13 @@ nav {
   left: -30px;
   color: white;
   cursor: pointer;
+  z-index: -1;
 }
 
 // FULL NAV BAR EXPAND STYLES
 .expand_down {
-	padding: 20px 0 60px;
+	padding: 20px 0 0;
+	@include tablet-portrait-and-up {
+		padding: 20px 0 60px;
+	}
 }

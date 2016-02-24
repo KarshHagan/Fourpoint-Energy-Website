@@ -11,4 +11,5 @@ $form_fill: #ecece8;
 $tablet_large: new-breakpoint(max-width 1024px);
 $tablet: new-breakpoint(max-width 768px);
 $mobile: new-breakpoint(max-width 480px);
+$mq-tablet-portrait-and-up   : 768px !default;
 $tl: 0.6s; // SEARCH transition length

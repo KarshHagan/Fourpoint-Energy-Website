@@ -189,6 +189,15 @@ blockquote {
     -moz-transition: background 0.3s ease;
     transition: background 0.3s ease; }
 
+.btn-blue {
+  border: 1px solid #00a8e2 !important; }
+  .btn-blue:hover {
+    background: transparent !important;
+    color: #00a8e2 !important;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    transition: background 0.3s ease; }
+
 nav {
   background: #000 url("/assets/img/nav_bg_160.jpg") no-repeat top center;
   background-size: 100% auto;
@@ -235,7 +244,7 @@ nav {
           color: #ffffff;
           position: absolute;
           right: 20px;
-          top: 60px; } }
+          top: 55px; } }
     nav .nav_wrap .main_nav_wrap {
       display: block;
       position: relative;
@@ -329,10 +338,10 @@ nav {
           display: none;
           text-align: right;
           top: 0;
-          padding: 30px 0 20px;
           position: relative; }
           nav .nav_wrap .main_nav_wrap #main_nav li {
-            display: block; } }
+            display: block;
+            margin: 8px 20px; } }
     nav .nav_wrap #mobile_menu {
       cursor: pointer; }
     nav .nav_wrap .utility {
@@ -377,8 +386,7 @@ nav {
   .search-box + label .search-icon {
     color: #B6B6B6; }
   .search-box:hover {
-    color: white;
-    background: #000000; }
+    color: white; }
     .search-box:hover + label .search-icon {
       color: white; }
   .search-box:focus {
@@ -395,7 +403,7 @@ nav {
     background: rgba(255, 255, 255, 0.2);
     color: white; }
     .search-box:focus + label .search-icon {
-      color: black; }
+      color: #ffffff; }
   .search-box:not(:focus) {
     text-indent: -5000px; }
 
@@ -407,10 +415,14 @@ nav {
   position: relative;
   left: -30px;
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: -1; }
 
 .expand_down {
-  padding: 20px 0 60px; }
+  padding: 20px 0 0; }
+  @media (min-width: 768px) {
+    .expand_down {
+      padding: 20px 0 60px; } }
 
 footer {
   background: #2e2e2d;
@@ -434,16 +446,22 @@ footer {
       padding-top: 40px; }
     footer section .footer_icon {
       width: 16%;
-      float: left; }
+      float: left;
+      text-align: center; }
       footer section .footer_icon img {
         width: 100px;
         height: 100px; }
     footer section .social {
-      width: 41.667%;
+      width: 42%;
       float: left;
-      padding-top: 30px; }
+      padding-top: 40px; }
       footer section .social ul {
-        text-align: right; }
+        margin-bottom: 20px; }
+        @media (min-width: 1024px) {
+          footer section .social ul {
+            float: right;
+            margin-top: -10px;
+            margin-bottom: 0; } }
         footer section .social ul li {
           height: 34px;
           width: 34px;
@@ -467,6 +485,16 @@ footer {
           text-align: center; }
       footer section .social {
         padding-top: 10px; } }
+  footer .e-contact, footer .e-contact a {
+    font-size: 12px;
+    color: #ffffff;
+    margin: 0; }
+  footer .e-contact {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; }
+    @media (min-width: 1024px) {
+      footer .e-contact {
+        float: right; } }
 
 header, .text-block {
   padding: 100px 0;

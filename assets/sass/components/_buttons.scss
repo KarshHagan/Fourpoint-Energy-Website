@@ -22,3 +22,12 @@
     @include transition(background 0.3s ease);
   }
 }
+
+.btn-blue {
+  border: 1px solid $fourpoint_blue !important;
+  &:hover {
+    background: transparent !important;
+    color: $fourpoint_blue !important;
+    @include transition(background 0.3s ease);
+  }
+}

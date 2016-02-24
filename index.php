@@ -36,12 +36,5 @@
 		<p>Dharavi houses hundreds of cottage and small-scale industries, run mostly by men, who make products like bags and belts, zari embroidery and pottery. It's also known for its huge recycling industry. Together, these enterprises generate more than $650 million a year, according to some reports.</p>
 		<button type="button" class="button btn-blue">Read Our History</button>
 	</section>
-<!-- 	<section class="text-block white">
-		<div class="inner">
-			<h2>Fourpoint Intro</h2>
-			<p>Dharavi houses hundreds of cottage and small-scale industries, run mostly by men, who make products like bags and belts, zari embroidery and pottery. It's also known for its huge recycling industry. Together, these enterprises generate more than $650 million a year, according to some reports.</p>
-			<button type="button" class="button btn-blue">
-		</div>
-	</section> -->
 	
 <?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>

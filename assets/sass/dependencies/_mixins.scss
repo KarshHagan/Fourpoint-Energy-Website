@@ -40,6 +40,19 @@
   }
 }
 
+// Everything above and including the tablet portrait
+@mixin tablet-portrait-and-up {
+  @media (min-width : $mq-tablet-portrait-and-up) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape-and-up {
+  @media (min-width : 1024px) {
+    @content;
+  }
+}
+
 @mixin third_btn {
 	font-size: 12px;
 	text-transform: uppercase;
