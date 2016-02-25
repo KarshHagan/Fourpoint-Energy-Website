@@ -1,0 +1,13 @@
+.container {
+	width: 96%;
+	max-width: 1100px;
+	margin: 50px auto;
+	padding: 0px 10px;
+	@include tablet-landscape-and-up {
+		max-width: 850px;
+	}	
+}
+
+.video {
+	margin: 25px 0;
+}
