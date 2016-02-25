@@ -6,6 +6,14 @@
   background-size: cover !important;
 }
 
+@mixin transformT($var...) {
+    -webkit-transform: $var;
+    -moz-transform: $var;
+    -ms-transform: $var;
+    -o-transform: $var;
+    transform: $var;
+}
+
 @mixin borderRadius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;

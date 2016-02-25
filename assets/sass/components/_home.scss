@@ -1,9 +1,47 @@
-.slider {
-	height: 400px;
-	background-image: url(../img/map_perspective.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+/* Home page slider sytles */
+.hero-slider {
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+	background-color: gray;
+	img {
+		height: auto;
+	}
+}
+
+.hero-slider-item {
+	position: relative;
+}
+
+.hero-slider-copy {
+	color: $white;
+	position: absolute;
+	top: 46%;
+	left: 50%;
+	width: 96%;
+	text-align: center;
+	@include transformT(translate(-50%, -50%));
+	@include tablet-portrait-and-up {
+		width: 80%;
+	}
+	@include tablet-landscape-and-up {
+		width: 68%;
+		top: 50%;
+	}
+	p {
+		@include media(tablet) {
+			width: 75%;
+		}
+		font-size: 18px;
+		font-weight: bold;
+	}
+	h1 {
+		font-size: 4em;
+		line-height: 0.85;
+		@include tablet-landscape-and-up {
+			font-size: 6em;
+		}
+	}
 }
 
 .button {

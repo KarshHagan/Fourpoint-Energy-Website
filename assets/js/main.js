@@ -16,6 +16,12 @@ $(document).ready(function() {
 			headerImg.css('opacity', 1);
 			loader.css('opacity', 0);
 	});
+
+	// Home page slider init
+	$('.hero-slider').slick({
+		dots: true,
+		speed: 200
+	});
 	
 	
 	// TEST FOR TOUCH AND CSS ANIMATION, LOAD GSAP ANIMATION IF NOT

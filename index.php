@@ -6,7 +6,44 @@
 	include($_SERVER['DOCUMENT_ROOT']."/includes/header.php"); 
 ?>
 
-	<div class="slider"></div>
+	<div class="hero-slider">
+		<div class="hero-slider-item hero-slider-item-1">
+			<div class="hero-slider-copy">
+				<h1>Experience Intro</h1>
+				<p>Dharavi houses hundreds of cottage and small-scale industries, run mostly by men, who make products like bags and belts, zari embroidery</p>
+				<button type="button" class="button btn-white">Read Our History</button>
+			</div>
+			<img src="/assets/img/history/history_banner1.jpg" />
+		</div>
+
+		<div class="hero-slider-item hero-slider-item-2">
+			<div class="hero-slider-copy">
+				<h1>Experience Intro</h1>
+				<p>Dharavi houses hundreds of cottage and small-scale industries, run mostly by men, who make products like bags and belts, zari embroidery</p>
+				<button type="button" class="button btn-white">Read Our History</button>
+			</div>
+			<img src="/assets/img/history/history_banner1.jpg" />
+		</div>
+
+		<div class="hero-slider-item hero-slider-item-3">
+			<div class="hero-slider-copy">
+				<h1>Experience Intro</h1>
+				<p>Dharavi houses hundreds of cottage and small-scale industries, run mostly by men, who make products like bags and belts, zari embroidery</p>
+				<button type="button" class="button btn-white">Read Our History</button>
+			</div>
+			<img src="/assets/img/history/history_banner1.jpg" />
+		</div>
+
+		<div class="hero-slider-item hero-slider-item-3">
+			<div class="hero-slider-copy">
+				<h1>Experience Intro</h1>
+				<p>Dharavi houses hundreds of cottage and small-scale industries, run mostly by men, who make products like bags and belts, zari embroidery</p>
+				<button type="button" class="button btn-white">Read Our History</button>
+			</div>
+			<img src="/assets/img/history/history_banner1.jpg" />
+		</div>
+		
+	</div>
 
 	<section class="text-block panel panel-white">
 		<h1>Fourpoint Intro</h1>
