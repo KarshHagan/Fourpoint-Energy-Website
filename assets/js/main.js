@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
 	// REPLACE SVG WITH PNG IF NO SUPPORT
@@ -60,7 +59,6 @@ $(document).ready(function() {
 	// stroll.bind( '#flipper' );
 
 	var win = $(window);
-
 	var allMods = $("#flipper li");
 
 	allMods.each(function(i, el) {

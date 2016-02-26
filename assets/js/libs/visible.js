@@ -12,7 +12,6 @@
    */
 
   $.fn.visible = function(partial) {
-    
       var $t            = $(this),
           $w            = $(window),
           viewTop       = $w.scrollTop(),
@@ -25,5 +24,5 @@
     return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
   };
-    
+
 })(jQuery);
