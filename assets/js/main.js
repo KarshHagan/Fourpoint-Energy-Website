@@ -69,7 +69,7 @@ $(document).ready(function() {
 	});
 
 	win.scroll(function(event) {
-	  
+	  alert('hi')
 	  allMods.each(function(i, el) {
 	    var el = $(el);
 	    if (el.visible(true)) {
