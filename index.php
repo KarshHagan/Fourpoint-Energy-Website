@@ -11,7 +11,7 @@
 			<div class="hero-slider-copy">
 				<h1>Experience Intro</h1>
 				<p>Dharavi houses hundreds of cottage and small-scale industries, run mostly by men, who make products like bags and belts, zari embroidery</p>
-				<button type="button" class="button btn-white">Read Our History</button>
+				<button type="button" class="button btn-blue">Read Our History</button>
 			</div>
 			<img src="/assets/img/history/history_banner1.jpg" />
 		</div>

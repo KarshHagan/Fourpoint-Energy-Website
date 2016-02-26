@@ -8,7 +8,7 @@ h1, h2, h3, h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 31px;
   text-transform: uppercase;
   @include tablet-portrait-and-up {
    font-size: 36px; 
@@ -16,13 +16,19 @@ h1 {
 }
 
 h2 {
-	font-size: 24px;	
+  font-size: 20px;
+  @include tablet-portrait-and-up {
+    font-size: 24px;  
+  }
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 18px;
   color: $light_gray;
   font-weight: 300;
+  @include tablet-portrait-and-up {
+    font-size: 22px;
+  }
 }
 
 ul, ol {

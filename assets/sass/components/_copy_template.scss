@@ -1,6 +1,6 @@
 .copy_split {
 	margin: 50px auto;
-	section {
+	.faq-wrapper {
 		@include outer-container;
 		@include clearfix;
 		padding: 25px 0;

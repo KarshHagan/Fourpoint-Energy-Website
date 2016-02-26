@@ -11,23 +11,23 @@
   }
 }
 .btn-white {
-  background-color: $white !important;
-  color: $fourpoint_blue !important;
-  border: 1px solid $fourpoint_blue !important;
+  background-color: $white;
+  color: $fourpoint_blue;
+  border: 1px solid $fourpoint_blue;
   @include transition(background 0.3s ease);
   &:hover {
-    background: transparent !important;
-    border-color: $white !important;
-    color: $white !important;
+    background: $fourpoint_blue;
+    border-color: $white;
+    color: $white;
     @include transition(background 0.3s ease);
   }
 }
 
 .btn-blue {
-  border: 1px solid $fourpoint_blue !important;
+  border: 1px solid $fourpoint_blue;
   &:hover {
-    background: transparent !important;
-    color: $fourpoint_blue !important;
+    background: $white;
+    color: $fourpoint_blue;
     @include transition(background 0.3s ease);
   }
 }

@@ -43,12 +43,15 @@ body, html {
   height: 100%;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
+  font-size: 0.9em;
   color: $medium_gray;
   position: relative;
   // background: url('/assets/img/bg_texture.jpg') repeat center center;
   background: $white;
   -webkit-font-smoothing: antialiased;
+  @include tablet-landscape-and-up {
+    font-size: 1em;
+  }
 }
 
 body {

@@ -11,7 +11,17 @@
 	<p>Cordillera Energy Partners insures their involvement within the Energy Industry through support of several organizations and trade associations</p>
 </header>
 
-<section class="form_wrap">
+<div class="container careers-intro">
+	<h2>Work for us and stuff.</h2>
+	<p>typewriter vice venmo austin. +1 cornhole four loko truffaut, listicle swag street art gochujang disrupt chambray man bun. Master cleanse asymmetrical kale chips</p>
+</div>
+
+
+	<!--  this section will be dropped in via iframe from their applicant management software.  -->
+
+
+
+<!-- <section class="form_wrap">
 	<form id="contact" name="contact" accept-charset="utf-8">
 		<div>
 			<label class="desc" id="title1" for="Field1">Name*</label>
@@ -128,7 +138,7 @@
 		</div>
 
 	</form>
-</section>
+</section> -->
 
 				
 <?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>
