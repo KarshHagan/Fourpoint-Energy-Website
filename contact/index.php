@@ -20,7 +20,8 @@
 
 <div class="container">
 	<div class="form_wrap">
-		<form id="contact" name="contact" class="contact-form" accept-charset="utf-8">
+		<form id="contact" name="contact" class="general-form" accept-charset="utf-8">
+			<h2 class="contact-form-header">General Inquiries</h2>
 			<div> <!-- this div is here for styling purposes -->
 				<label class="select-dept-label">Who Would You Like To Talk To?*</label>
 				<div class="form_select">
@@ -47,7 +48,9 @@
 				<label class="desc" id="message" for="Field1">Message*</label>
 				<textarea name="name" type="text" placeholder="Message"></textarea>
 			</div>
-			<div id="form-error-msg">There was a problem with your submission.</div>
+			<div class="error-msg">
+				<label id="form-error-msg">There was a problem with your submission.</label>
+			</div>
 			<button type="button" value="submit" class="button btn-blue">Send</button>
 		</form>
 	</div>
@@ -55,11 +58,11 @@
 	<div class="sidebar">
 		<h2>Quick Contacts</h2>
 		<div class="copy_split">
-			<div class="faq-wrapper">
+			<div class="side-content">
 				<aside><p>Owner Relations</p></aside>
 				<article><a href="#">303-303-3030</a></article>
 			</div>
-			<div class="faq-wrapper">
+			<div class="side-content">
 				<aside><p>Business Development</p></aside>
 				<article><a href="#">303-303-3030</a></article>
 			</div>

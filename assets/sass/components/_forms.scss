@@ -1,9 +1,8 @@
 .form_wrap {
 	@include outer-container;
-	// padding: 30px 0 80px;
 	div {
 		@include clearfix;
-		margin: 15px auto 18px;
+		margin: 15px auto;
 		label, input {
 			display: block;
 			width: 90%;
@@ -23,23 +22,11 @@
 		  height: 50px;
 		}
 		
-		// .upload_select {
-		// 	float: left;
-		// 	margin-left: 0;
-		// 	&:after {
-		// 		content: "+";
-		// 		color: darken($form_fill, 30%);
-		// 		font-weight: bold;
-		// 	}
-		// }
-		// .upload_label {
-		// 	display: inline-block;
-		// }
 		label {
-			// width: 30%;
 			min-width: 100px;
 			padding: 0.7em 0;
 			max-width: 400px;
+			text-align: left;
 		}
 		input, textarea {
 			width: 90%;
@@ -48,9 +35,6 @@
 		textarea {
 			min-height: 80px;
 		}
-		// .city_input {
-		// 	max-width: 280px;
-		// }
 		@include media(tablet) {
 			input, label, .form_select, input[type="text"], input[type="email"], textarea {
 				float: none;
@@ -113,22 +97,33 @@
 	    option { background: $light_gray; }
 	  }
 	}
+}
 
-	// .submit {
-	// 	width: 70%;
-	// 	margin-left: 30%;
-	// 	input {
-	// 		@include first_btn;
-	// 		outline: none;
-	// 		width: auto;
-	// 	}
-	// 	@include media(tablet) {
-	// 		width: 90%;
-	// 		max-width: 450px;
-	// 		margin: 0 auto;
-	// 		input {
-	// 			float: left;
-	// 		}
-	// 	}
-	// }
+// div.error-msg {
+// 	margin: 0;
+// }
+
+.login-form {
+	div {
+		input[type="text"] {
+			background: $white;
+		}
+	}
+	.general-form {
+		width: 100%;
+	}
+}
+
+aside.login-card {
+	margin: 60px auto;
+}
+
+div.forgot-pw {
+	margin: 15px auto 20px;
+	a {
+		color: $fourpoint_blue;
+		&:hover {
+			color: $yellow;
+		}
+	}
 }

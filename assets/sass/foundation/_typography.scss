@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  color: $light_gray;
+  color: $medium_gray;
   font-weight: 300;
   @include tablet-portrait-and-up {
     font-size: 22px;
@@ -39,7 +39,7 @@ ul, ol {
 a {
   color: $white;
   text-decoration: none;
-  @include transition(color .3s ease-in-out);
+  @include transition(color 0.2s ease);
   &:hover, &:active {
     color: $yellow;
     text-decoration: none;
@@ -50,8 +50,8 @@ a {
 }
 
 p {
-  font-size: 15px;
-  line-height: 1.7em;
+  font-size: 16px;
+  line-height: 1.5em;
   margin: 20px auto;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1px;

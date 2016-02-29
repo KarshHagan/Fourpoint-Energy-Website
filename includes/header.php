@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <!--[if lt IE 9 ]>    <html lang="en" class="no-js ie ie8"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html class='no-js' lang='en' prefix='og: http://ogp.me/ns#'>
@@ -19,8 +19,9 @@
 	<link rel="stylesheet" href="/assets/css/stroll.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+	<!-- <script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.7.1.min.js"><\/script>')</script> -->
 	<script type="text/javascript" src="/assets/js/libs/modernizr.js"></script>
 	
 	<!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
@@ -34,7 +35,6 @@
 
 	</head>
 	<body>
-
 		<nav>
 			<section>
 				<a class="logo" href="/">
@@ -49,7 +49,7 @@
 							  <input type="submit" id="search-submit" />
 							</form>
 						</div>
-						<a href="#">Contact</a>
+						<a href="/contact">Contact</a>
 						<a href="#">Leasing/Selling</a>
 						<a href="#" class="lease-sell">
 							<div class="qmark">
@@ -59,7 +59,7 @@
 								typewriter vice venmo austin. +1 cornhole four loko truffaut, listicle swag street art gochujang disrupt chambray man bun. Master cleanse asymmetrical kale chips meditation sustainable. Shoreditch yr iPhone irony tote bag, forage post-ironic aesthetic
 							</p>	
 						</a>
-						<a class="btn" href="#">Login</a>
+						<a class="btn" href="/login">Login</a>
 					</div>
 					<div id="mobile_menu" class="mobile_nav_icon">MENU&nbsp;&nbsp;<i class="fa fa-bars fa-2"></i></div>
 					<div class="main_nav_wrap">
@@ -67,7 +67,7 @@
 					    	<li class="more"><a href="#">about</a>
 					    		<ul class="submenu">
 					    			<li><a href="/our-history">Our History</a></li>
-					    			<li><a href="#">Who We Are</a></li>
+					    			<li><a href="/general-content-page">Who We Are</a></li>
 					    			<li><a href="/areas-of-operation">Areas of Operation</a></li>
 					    			<li><a href="#">Business Opportunities</a></li>
 					    			<li><a href="/management-team">Management Team</a></li>
@@ -93,7 +93,7 @@
 					    		</ul>
 					    	</li>
 					    	<li><a href="/join-our-team">Careers</a></li>
-							<li class="mobile_utility"><a href="#">Contact</a></li>
+							<li class="mobile_utility"><a href="/contact">Contact</a></li>
 							<li class="mobile_utility"><a href="#">Leasing/Selling</a></li>
 							<li class="mobile_utility">
 						    	<div class="search_wrap">

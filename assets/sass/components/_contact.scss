@@ -1,6 +1,7 @@
 #form-error-msg {
 	color: red;
 	display: none;
+	margin-bottom: 10px;
 }
 
 .select-dept-label {
@@ -9,7 +10,7 @@
 	display: inline-block;
 }
 
-.contact-form {
+.general-form {
 	width: 100%;
 	@include tablet-portrait-and-up {
 		float: left;
@@ -18,6 +19,12 @@
 
 	button {
 		margin: 0 auto 20px;
+	}
+
+	.contact-form-header {
+		text-align: center;
+		margin: 20px 0;
+		text-transform: uppercase;
 	}
 }
 
@@ -60,7 +67,7 @@
 	}
 	h2 {
 		text-align: center;
-		margin-top: 20px;
+		margin: 20px 0 10px;
 		text-transform: uppercase;
 	}
 	article a {
@@ -69,7 +76,7 @@
 
 	.copy_split {
 		margin: 0;
-		.faq-wrapper {
+		.side-content {
 			width: 100%;
 			padding: 12px 0;
 			aside {
@@ -118,7 +125,7 @@
 
 	p {
 		padding: 0 15px;
-		margin: 10px 0 15px;
+		margin: 10px 0 25px;
 		line-height: 1.25;
 	}
 
@@ -128,7 +135,7 @@
 	}
 
 	.inner {
-		width: 90%;
+		width: 96%;
 		margin: 15px auto 0;
 		display: inline-block;
 	}

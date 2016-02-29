@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,200);
 
 @font-face {
   font-family: 'social_icons';
@@ -38,20 +38,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 
 body, html {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7em;
   height: 100%;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9em;
-  color: $medium_gray;
+  font-size: 12px;
+  color: $dark_gray;
   position: relative;
   // background: url('/assets/img/bg_texture.jpg') repeat center center;
   background: $white;
   -webkit-font-smoothing: antialiased;
-  @include tablet-landscape-and-up {
-    font-size: 1em;
-  }
 }
 
 body {
