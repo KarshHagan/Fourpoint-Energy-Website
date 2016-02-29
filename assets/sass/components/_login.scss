@@ -1,0 +1,17 @@
+aside.login-card {
+	width: 100%;
+	margin: 6px auto 0;
+	@include tablet-portrait-and-up {
+		width: 33.33333%;
+		float: left;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+.row {
+	@include tablet-portrait-and-up {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}

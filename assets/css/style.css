@@ -963,21 +963,6 @@ header, .text-block {
       .form_wrap .form_select .select option {
         background: #B6B6B6; }
 
-.login-form div input[type="text"] {
-  background: #ffffff; }
-.login-form .general-form {
-  width: 100%; }
-
-aside.login-card {
-  margin: 60px auto; }
-
-div.forgot-pw {
-  margin: 15px auto 20px; }
-  div.forgot-pw a {
-    color: #00a8e2; }
-    div.forgot-pw a:hover {
-      color: #ffc20e; }
-
 .copy_split {
   margin: 50px auto; }
   .copy_split .side-content {
@@ -1401,9 +1386,11 @@ div.forgot-pw {
   .careers-intro h2, .careers-intro p {
     text-align: center; }
 
-.general-content ul li {
-  list-style-type: disc;
-  list-style-position: inside; }
+.general-content ul {
+  margin-bottom: 20px; }
+  .general-content ul li {
+    list-style-type: disc;
+    list-style-position: inside; }
 
 #form-error-msg {
   color: red;
@@ -1502,7 +1489,7 @@ div.forgot-pw {
   background-color: #ecece8;
   z-index: 3;
   position: relative;
-  padding-bottom: 15px; }
+  padding-bottom: 22px; }
   .card-bottom p {
     padding: 0 15px;
     margin: 10px 0 25px;
@@ -1631,5 +1618,20 @@ blockquote {
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased; }
+
+aside.login-card {
+  width: 100%;
+  margin: 6px auto 0; }
+  @media (min-width: 768px) {
+    aside.login-card {
+      width: 33.33333%;
+      float: left;
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+@media (min-width: 768px) {
+  .row {
+    margin-left: -15px;
+    margin-right: -15px; } }
 
 /*# sourceMappingURL=style.css.map */

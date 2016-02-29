@@ -95,35 +95,6 @@
 	    z-index: 2; 
 	    
 	    option { background: $light_gray; }
-	  }
-	}
-}
-
-// div.error-msg {
-// 	margin: 0;
-// }
-
-.login-form {
-	div {
-		input[type="text"] {
-			background: $white;
-		}
-	}
-	.general-form {
-		width: 100%;
-	}
-}
-
-aside.login-card {
-	margin: 60px auto;
-}
-
-div.forgot-pw {
-	margin: 15px auto 20px;
-	a {
-		color: $fourpoint_blue;
-		&:hover {
-			color: $yellow;
-		}
+	  	}
 	}
 }

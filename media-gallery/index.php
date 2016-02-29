@@ -11,6 +11,10 @@
 	<p>Check out these sweet photos.</p>
 </header>
 
+<div class="container">
+
+</div>
+
 
 
 <?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>
