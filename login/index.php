@@ -27,7 +27,7 @@
 			<img src="../assets/img/tree-test2.jpg" />
 			<div class="card-bottom">
 				<div class="inner">
-					<h2>Investors</h2>
+					<h2>Interest Owners</h2>
 					<p>Login copy goes here Login copy goes here Login copy goes here Login copy goes here</p>	
 					<button type="button" class="button btn-blue">Go to the login page</button>
 				</div>
@@ -38,7 +38,7 @@
 			<img src="../assets/img/tree-test2.jpg" />
 			<div class="card-bottom">
 				<div class="inner">
-					<h2>Investors</h2>
+					<h2>FourPoint Staff</h2>
 					<p>Login copy goes here Login copy goes here Login copy goes here Login copy goes here</p>	
 					<button type="button" class="button btn-blue">Go to the login page</button>
 				</div>

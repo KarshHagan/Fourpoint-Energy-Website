@@ -58,4 +58,25 @@ $(document).ready(function() {
     $(this).addClass("active-nav-item");
     $(".nav .more").removeClass("active-nav-item");
   });
+
+  var slateNav = function() {
+    $('nav').css({
+      "background-image": "url('/assets/img/nav_bg_160.jpg')",
+      "background-size": "cover",
+      "position": "relative"
+    });
+  };
+
+  // nav positioning on pages other than home.
+  if(!$('.hero-slider').length) {
+    if($(window).width() >= 1024 ) {
+      slateNav();
+      $(window).on('resize', function() {
+        slateNav();
+      });
+    }
+  }
+
+
+
 });

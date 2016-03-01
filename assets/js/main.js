@@ -20,6 +20,12 @@ $(document).ready(function() {
 	$('.hero-slider').slick({
 		dots: true,
 		speed: 200
+		// responsive: [
+		// 	{
+		// 		breakpoint: 800,
+		// 		slidesToShow: 2
+		// 	}
+		// ]
 	});
 	
 	

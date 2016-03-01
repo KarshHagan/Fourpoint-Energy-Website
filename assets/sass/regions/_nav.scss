@@ -1,8 +1,27 @@
 nav {
-	background: #000 url('/assets/img/nav_bg_160.jpg') no-repeat top center;
-	background-size: 100% auto;
+	// background: #000 url('/assets/img/nav_bg_160.jpg') no-repeat top center;
+	// background-size: 100% auto;
+	background: #000 url('/assets/img/nav_bg_mobile_sm.jpg');
+	width: 100%;
 	padding: 20px 0 10px;
-	@include transition(padding .3s ease);
+	background-size: inherit;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	position: static;
+	// background-size: 100% auto;
+	@media screen and (min-width: 800px) {
+		background-size: 100%;
+	}
+	@include transition(padding 0.25s ease);
+	@include tablet-landscape-and-up {
+		background: transparent;
+		position: absolute;
+		height: 110px;
+	    top: 0;
+	    left: 0;
+	    z-index: 99;
+	}
 	section {
 		@include outer-container;
 	}
@@ -103,10 +122,11 @@ nav {
 				    	left: 0;
 				    	left: calc(-50vw + 50%);
 				    	margin: 0;
-				    	background: $white;
-				    	background: $trans_white;
+				    	// background: $white;
+				    	// background: $trans_white;
+				    	background: rgba(0, 0, 0, 0.4);
 				    	text-align: center;
-				    	@include transition(max-height .3s ease);
+				    	@include transition(max-height 0.25s ease);
 				    	li {
 				    		display: inline;
 				    		a {
@@ -183,9 +203,6 @@ nav {
 				}
 			}
 		}
-	}
-	@include media(tablet_large) {
-		background: #000 url('/assets/img/nav_bg_mobile.jpg') no-repeat top center;
 	}
 }
 
