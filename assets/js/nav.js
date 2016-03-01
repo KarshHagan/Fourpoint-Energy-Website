@@ -11,6 +11,8 @@ $(document).ready(function() {
     menu.slideToggle(function(){
       if(menu.is(':hidden')) {
         menu.removeAttr('style');
+      } else {
+        menu.css('overflow', 'hidden');
       }
     });
   });
@@ -21,13 +23,13 @@ $(document).ready(function() {
 
     // if nothing is open, open clicked, slide down nav
     if (!navWrap.hasClass('expand_down')) {
-      self.toggleClass('show_submenu');
+      self.toggleClass('show_submenu').prev().toggleClass('active');
       navWrap.toggleClass('expand_down');
     }    
 
     // close the opened one if it's clicked while open
     else if (self.hasClass('show_submenu')) {
-      self.toggleClass('show_submenu');
+      self.toggleClass('show_submenu').prev().toggleClass('active');
       navWrap.toggleClass('expand_down');
     }
 
@@ -35,16 +37,15 @@ $(document).ready(function() {
     else if (navWrap.hasClass('expand_down') && $('.submenu').hasClass('show_submenu'))  {
 
       // close everything
-      $('.submenu').removeClass('show_submenu');
+      $('.submenu').removeClass('show_submenu').prev().removeClass('active');
       currentOpen.removeClass('show_submenu');
       self.removeClass('show_submenu');
       navWrap.removeClass('expand_down');
 
       // open everything
       currentOpen.addClass('show_submenu');
-      self.addClass('show_submenu');
+      self.addClass('show_submenu').prev().addClass('active');
       navWrap.addClass('expand_down');
-
     }
   });
 

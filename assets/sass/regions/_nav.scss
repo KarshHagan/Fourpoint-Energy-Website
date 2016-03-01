@@ -81,9 +81,11 @@ nav {
 						margin-left: 10px;
 						content: '\25BE';
 						color: white;
-						color: rgba(255,255,255,.6);
+						color: rgba(255,255,255,0.6);
 						font-size: 24px;
-						@include transition (color .3s ease);
+						position: relative;
+						top: 2px;
+						@include transition (color 0.2s ease);
 					}
 					&:hover {
 						a:after {
@@ -288,6 +290,10 @@ nav {
 			margin-left: -20px;
 		}
 	}
+}
+
+.more .active, .more .active:after {
+	color: $yellow !important;
 }
 
 .qmark:hover + .tooltip {
