@@ -81,15 +81,23 @@
 					    			<li><a href="/industry-affiliations">Industry Affiliations</a></li>
 					    		</ul>
 					    	</li>
-					    	<li><a href="#">Interest owners</a></li>
-					    	<li><a href="#">Investors</a></li>
+					    	<li class="more"><a href="#">Interest owners</a>
+					    		<ul class="submenu">
+					    			<li><a href="#">Login</a></li>
+					    			<li><a href="#">One</a></li>
+					    			<li><a href="#">Two</a></li>
+					    			<li><a href="#">Three</a></li>
+					    			<li><a href="#">Four</a></li>
+					    		</ul>
+					    	</li>
+					    	<li><a href="#" id="investors-link">Investors</a></li>
 					    	<li class="more"><a href="#">News</a>
 					    		<ul class="submenu">
 					    			<li><a href="#">Features</a></li>
 					    			<li><a href="/press-releases">Press Releases</a></li>
 					    			<li><a href="/frequently-asked-questions">Presentations &amp; Fact Sheet</a></li>
 					    			<li><a href="#">The Natural Gas Story</a></li>
-					    			<li><a href="#">Events & Media Gallery</a></li>
+					    			<li><a href="#">Events &amp; Media Gallery</a></li>
 					    		</ul>
 					    	</li>
 					    	<li><a href="/join-our-team">Careers</a></li>

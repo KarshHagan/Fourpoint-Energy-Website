@@ -71,12 +71,13 @@ footer {
 		}
 	}
 	.e-contact, .e-contact a {
-		font-size: 12px;
+		font-size: 13px;
 		color: $white;
 		margin: 0;
 	}
 
 	.e-contact {
+		margin-top: 1px;
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		@include tablet-landscape-and-up {

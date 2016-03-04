@@ -20,12 +20,31 @@ $(document).ready(function() {
 	$('.hero-slider').slick({
 		dots: true,
 		speed: 200
-		// responsive: [
-		// 	{
-		// 		breakpoint: 800,
-		// 		slidesToShow: 2
-		// 	}
-		// ]
+	});
+
+	// change slider images depending on screen sizes
+	var windowWidth = $(window).width();
+	var changeSliderImages = function(windowWidth) {
+		var $slides = $('.the-slide');
+
+		$slides.each(function(index, el) {
+			if(windowWidth >= 850) {
+				$(el).css({
+					'background-image': 'url(' + $(el).data('img-lg') + ')'
+				});
+			} else {
+				$(el).css({
+					'background-image': 'url(' + $(el).data('img-sm') + ')'
+				});
+			}
+		});
+	};
+
+	changeSliderImages(windowWidth);
+
+	$(window).on('resize', function(windowWidth) {
+		windowWidth = $(window).width();
+		changeSliderImages(windowWidth);
 	});
 	
 	
@@ -85,6 +104,17 @@ $(document).ready(function() {
 	  
 	});
 
+	// Trigger Investors login modal
+	var loginModal = document.getElementById('login-modal');
+	document.getElementById('investors-link').addEventListener('click', function() {
+		loginModal.style.display = 'block';
+	});
+
+	// Close login modal
+	var closeBtn = document.querySelector('.close-modal');
+	closeBtn.addEventListener('click', function() {
+		loginModal.style.display = 'none';
+	});
 	
 });
 

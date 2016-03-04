@@ -22,6 +22,7 @@
 			<li>brunch</li>
 			<li>four dollar toast</li>
 		</ul>
+		<img src="/assets/img/history/history_banner3.jpg" />
 		<strong>This is regular size content, but bold.</strong>
 		<i>This is regular size content, but italic.</i>
 		<p>Shoreditch yr iPhone irony tote bag, forage post-ironic aesthetic occupy pour-over brunch paleo seitan. Hoodie whatever art party, chicharrones kinfolk everyday carry meggings. Etsy fingerstache kitsch, ennui gochujang synth readymade crucifix cliche bicycle rights. Master cleanse waistcoat four dollar toast tattooed kombucha letterpress, art party selvage.</p>

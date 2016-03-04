@@ -133,7 +133,6 @@ img {
     transition: background 0.3s ease; }
 
 nav {
-  background: #000 url("/assets/img/nav_bg_mobile_sm.jpg");
   width: 100%;
   padding: 20px 0 10px;
   background-size: inherit;
@@ -141,6 +140,7 @@ nav {
   background-position: top center;
   background-attachment: fixed;
   position: static;
+  background-color: #2e2e2d;
   -webkit-transition: padding 0.25s ease;
   -moz-transition: padding 0.25s ease;
   transition: padding 0.25s ease; }
@@ -482,10 +482,11 @@ footer {
       footer section .social {
         padding-top: 10px; } }
   footer .e-contact, footer .e-contact a {
-    font-size: 12px;
+    font-size: 13px;
     color: #ffffff;
     margin: 0; }
   footer .e-contact {
+    margin-top: 1px;
     text-align: center;
     font-family: 'Montserrat', sans-serif; }
     @media (min-width: 1024px) {
@@ -1061,20 +1062,21 @@ header, .text-block {
   @media (min-width: 1024px) {
     .hero-slider {
       height: 610px; } }
-  .hero-slider img {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 400px;
-    top: 0;
-    z-index: 999;
-    left: 0; }
-    @media (min-width: 768px) {
-      .hero-slider img {
-        height: 100%; } }
 
 .hero-slider-item {
   position: relative; }
+
+.the-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 400px; }
+  @media (min-width: 768px) {
+    .the-slide {
+      height: 500px; } }
+  @media (min-width: 1024px) {
+    .the-slide {
+      height: 610px; } }
 
 .hero-slider-copy {
   color: #ffffff;
@@ -1434,6 +1436,8 @@ header, .text-block {
   .general-content ul li {
     list-style-type: disc;
     list-style-position: inside; }
+.general-content img {
+  margin: 20px auto; }
 
 #form-error-msg {
   color: red;
@@ -1676,5 +1680,49 @@ aside.login-card {
   .row {
     margin-left: -15px;
     margin-right: -15px; } }
+
+#login-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.75);
+  display: none; }
+  #login-modal svg {
+    width: 35px;
+    height: 35px;
+    fill: #00a8e2;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s; }
+    #login-modal svg:hover {
+      fill: #ffc20e;
+      -webkit-transition: 0.25s;
+      -moz-transition: 0.25s;
+      transition: 0.25s; }
+  #login-modal a {
+    color: #00a8e2; }
+    #login-modal a:hover, #login-modal a:active {
+      color: #ffc20e; }
+  #login-modal .login-card {
+    width: 96%;
+    float: none;
+    position: relative;
+    top: 54%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  #login-modal .general-form {
+    width: 100%; }
+  #login-modal .close-modal {
+    position: relative;
+    float: right;
+    z-index: 5;
+    padding-top: 10px;
+    padding-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

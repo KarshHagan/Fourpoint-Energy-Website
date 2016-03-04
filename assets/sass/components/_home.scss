@@ -10,23 +10,36 @@
 	@include tablet-landscape-and-up {
 		height: 610px;
 	}
-	img {
-		// height: auto;
-		display: block;
-		position:relative;
-		width: 100%;
-		height: 400px;
-		top: 0;
-		z-index: 999;
-		left: 0;
-		@include tablet-portrait-and-up {
-			height: 100%;
-		}
-	}
+	// img {
+	// 	// height: auto;
+	// 	display: block;
+	// 	position:relative;
+	// 	width: 100%;
+	// 	// height: 400px;
+	// 	top: 0;
+	// 	z-index: 999;
+	// 	left: 0;
+	// 	@include tablet-portrait-and-up {
+	// 		height: 100%;
+	// 	}
+	// }
 }
 
 .hero-slider-item {
 	position: relative;
+}
+
+.the-slide {	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 400px;
+	@include tablet-portrait-and-up {
+		height: 500px;
+	}
+	@include tablet-landscape-and-up {
+		height: 610px;
+	}
 }
 
 .hero-slider-copy {

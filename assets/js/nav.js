@@ -17,6 +17,17 @@ $(document).ready(function() {
     });
   });
 
+  $(window).on('resize', function() {
+    if($(this).width() >= 1024) {
+      console.log('stuff')
+      // if(menu.is(':hidden')) {
+        menu.removeAttr('style');
+      // } else {
+      //   menu.css('overflow', 'hidden');
+      // }
+    }
+  });
+
   $(moreLink).on('click', function() {
     var self = $(this).find(subMenu);
         currentOpen = navWrap.find(subMenuExpanded);
@@ -67,15 +78,33 @@ $(document).ready(function() {
     });
   };
 
+  var slateNavMobile = function() {
+    $('nav').css({
+      "background-image": "url('/assets/img/nav_bg_mobile_sm.jpg')",
+      "background-size": "100%",
+      "position": "relative"
+    });
+  };
+
   // nav positioning on pages other than home.
   if(!$('.hero-slider').length) {
     if($(window).width() >= 1024 ) {
       slateNav();
-      $(window).on('resize', function() {
-        slateNav();
-      });
+    } else {
+      slateNavMobile();
     }
   }
+
+  $(window).on('resize', function() {
+    if(!$('.hero-slider').length) {
+      if($(window).width() >= 1024 ) {
+        slateNav();
+      } else {
+        // $('nav').css('background', '#2e2e2d');
+        slateNavMobile();
+      }
+    }
+  });
 
 
 
