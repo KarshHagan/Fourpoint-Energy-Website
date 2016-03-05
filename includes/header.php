@@ -81,13 +81,15 @@
 					    			<li><a href="/industry-affiliations">Industry Affiliations</a></li>
 					    		</ul>
 					    	</li>
-					    	<li class="more"><a href="#">Interest owners</a>
+					    	<li class="more wide"><a href="#">Interest Owners</a>
 					    		<ul class="submenu">
-					    			<li><a href="#">Login</a></li>
-					    			<li><a href="#">One</a></li>
-					    			<li><a href="#">Two</a></li>
-					    			<li><a href="#">Three</a></li>
-					    			<li><a href="#">Four</a></li>
+					    			<li><a href="#">Owner Login</a></li>
+					    			<li><a href="#">Owner Info</a></li>
+					    			<li><a href="#">Check Stubs</a></li>
+					    			<li><a href="#">JIM Statements</a></li>
+					    			<li><a href="#">Change of Ownership</a></li>
+					    			<li><a href="#">FAQ</a></li>
+					    			<li><a href="#">Contact Info</a></li>
 					    		</ul>
 					    	</li>
 					    	<li><a href="#" id="investors-link">Investors</a></li>
