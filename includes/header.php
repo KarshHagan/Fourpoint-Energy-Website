@@ -17,6 +17,17 @@
   	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="/assets/css/style.css" />
 	<link rel="stylesheet" href="/assets/css/stroll.css" />
+
+	<!-- if on the gallery page, load fancybox css files -->
+	<?php
+		$currentpage = $_SERVER['REQUEST_URI'];
+		if($currentpage === "/gallery") {
+			echo '<link rel="stylesheet" href="/assets/fancybox/source/jquery.fancybox.css" />';
+
+			echo '<link rel="stylesheet" href="/assets/fancybox/source/helpers/jquery.fancybox-thumbs.css" />'; 
+		}
+	?>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -99,7 +110,7 @@
 					    			<li><a href="/press-releases">Press Releases</a></li>
 					    			<li><a href="/frequently-asked-questions">Presentations &amp; Fact Sheet</a></li>
 					    			<li><a href="#">The Natural Gas Story</a></li>
-					    			<li><a href="#">Events &amp; Media Gallery</a></li>
+					    			<li><a href="/gallery">Events &amp; Media Gallery</a></li>
 					    		</ul>
 					    	</li>
 					    	<li><a href="/join-our-team">Careers</a></li>

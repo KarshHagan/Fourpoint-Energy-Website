@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	var $gallery = $('#fp-gallery');
 
 	// REPLACE SVG WITH PNG IF NO SUPPORT
 	
@@ -115,7 +116,25 @@ $(document).ready(function() {
 	closeBtn.addEventListener('click', function() {
 		loginModal.style.display = 'none';
 	});
-	
+
+	// fancybox init
+	if($gallery.length) {
+		$(".fancybox").fancybox({
+			padding: 0,
+			prevEffect: 'none',
+			nextEffect: 'none',
+			helpers: {
+				title: {
+					type: 'outside'
+				},
+				media: {},
+				thumbs: {
+					width: 80,
+					height: 50
+				}
+			}
+		});
+	}
 });
 
 
