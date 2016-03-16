@@ -16,15 +16,14 @@
 
 		<div class="gallery-filter">
 			<ul>
-				<li><button type="button" class="button btn-blue">All</button></li>
-				<li><button type="button" class="button btn-blue">Images</button></li>
-				<li><button type="button" class="button btn-blue">Video</button></li>
+				<li><button type="button" class="filter-btn button btn-white">All</button></li>
+				<li><button type="button" class="filter-btn button btn-blue">Images</button></li>
+				<li><button type="button" class="filter-btn button btn-blue">Video</button></li>
 			</ul>
 		</div>
 		
 		<!-- This is an image gallery. -->
 		<div class="gallery">
-
 
 			<!-- This is the thumbnail -->
 			<a class="fancybox" rel="gallery1" title="Image1 Title" href="/assets/fancybox/demo/1_b.jpg"><img src="/assets/img/history/history_banner1.jpg" alt="" /></a>
@@ -60,7 +59,6 @@
 			<a class="fancybox fbx-video" href="https://www.youtube.com/watch?v=FkHbC1RSjv8"><img src="/assets/img/history/history_banner4.jpg" alt="" /></a>
 		</div>
 
-		
 		<!-- This is a single image -->
 		<div class="single-img">
 			<a class="fancybox" title="Single Image Title" href="/assets/fancybox/demo/2_b.jpg"><img src="/assets/img/history/history_banner2.jpg" alt="" /></a>

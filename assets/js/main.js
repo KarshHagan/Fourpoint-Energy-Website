@@ -135,6 +135,15 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	// gallery filter
+	var $filterBtn = $('.filter-btn');
+	$filterBtn.on('click', function() {
+		$filterBtn.each(function() {
+			$(this).removeClass('btn-white').addClass('btn-blue');
+		});
+		$(this).addClass('btn-white');
+	});
 });
 
 
