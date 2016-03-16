@@ -138,11 +138,32 @@ $(document).ready(function() {
 
 	// gallery filter
 	var $filterBtn = $('.filter-btn');
-	$filterBtn.on('click', function() {
-		$filterBtn.each(function() {
-			$(this).removeClass('btn-white').addClass('btn-blue');
+	var $sortableItem = $('.sortable');
+	// var itemType = $sortableItem.data('type');
+
+	$filterBtn.on('click', function(e) {
+		e.preventDefault();
+		// console.log(itemType)
+		var filterVal = $(this).data('category');
+		var $target = $(e.target);
+		;
+
+		// add/remove classes to show active state
+		$filterBtn.removeClass('btn-white').addClass('btn-blue');
+		$target.toggleClass('btn-white');
+
+		// loop through items, fade in/out based on type
+		$sortableItem.each(function() {
+			var itemType = $(this).data('type')
+			if(filterVal === 'all') {
+				$(this).fadeIn('fast');
+			} else if(filterVal != itemType) {
+				$(this).fadeOut('fast');
+			} else {
+				$(this).fadeIn('fast');
+			}
 		});
-		$(this).addClass('btn-white');
+
 	});
 });
 
