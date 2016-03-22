@@ -1,7 +1,7 @@
 nav {
 	// background: #000 url('/assets/img/nav_bg_160.jpg') no-repeat top center;
 	// background-size: 100% auto;
-	// background: #000 url('/assets/img/nav_bg_mobile_sm.jpg');
+	background: $dark_gray url('/assets/img/nav_bg_mobile_sm.jpg');
 	width: 100%;
 	padding: 20px 0 10px;
 	background-size: inherit;
@@ -9,20 +9,12 @@ nav {
 	background-position: top center;
 	background-attachment: fixed;
 	position: static;
-	background-color: $dark_gray;
 	// background-size: 100% auto;
 	@media screen and (min-width: 800px) {
 		background-size: 100%;
 	}
 	@include transition(padding 0.25s ease);
-	@include tablet-landscape-and-up {
-		background: transparent;
-		position: absolute;
-		height: 110px;
-	    top: 0;
-	    left: 0;
-	    z-index: 99;
-	}
+
 	section {
 		@include outer-container;
 	}
@@ -337,4 +329,19 @@ nav {
 	opacity: 1;
 	visibility: visible;
 	@include transition(0.3s);
+}
+
+// Change nav background depending on page
+.home {
+	nav {
+		background: $dark_gray;
+		@include tablet-landscape-and-up {
+			background: transparent;
+			position: absolute;
+			height: 110px;
+		    top: 0;
+		    left: 0;
+		    z-index: 99;
+		}
+	}	
 }

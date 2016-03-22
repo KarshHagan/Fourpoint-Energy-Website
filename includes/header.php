@@ -21,7 +21,7 @@
 	<!-- if on the gallery page, load fancybox css files -->
 	<?php
 		$currentpage = $_SERVER['REQUEST_URI'];
-		if($currentpage === "/gallery") {
+		if($currentpage === "/gallery/") {
 			echo '<link rel="stylesheet" href="/assets/fancybox/source/jquery.fancybox.css" />';
 
 			echo '<link rel="stylesheet" href="/assets/fancybox/source/helpers/jquery.fancybox-thumbs.css" />'; 

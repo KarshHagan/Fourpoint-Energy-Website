@@ -92,6 +92,9 @@ img {
   display: block;
   max-width: 100%; }
 
+.map-embed {
+  float: left; }
+
 .btn {
   padding: 5px 10px;
   background: transparent;
@@ -133,6 +136,7 @@ img {
     transition: background 0.3s ease; }
 
 nav {
+  background: #2e2e2d url("/assets/img/nav_bg_mobile_sm.jpg");
   width: 100%;
   padding: 20px 0 10px;
   background-size: inherit;
@@ -140,21 +144,12 @@ nav {
   background-position: top center;
   background-attachment: fixed;
   position: static;
-  background-color: #2e2e2d;
   -webkit-transition: padding 0.25s ease;
   -moz-transition: padding 0.25s ease;
   transition: padding 0.25s ease; }
   @media screen and (min-width: 800px) {
     nav {
       background-size: 100%; } }
-  @media (min-width: 1024px) {
-    nav {
-      background: transparent;
-      position: absolute;
-      height: 110px;
-      top: 0;
-      left: 0;
-      z-index: 99; } }
   nav section {
     max-width: 1100px;
     margin-left: auto;
@@ -419,6 +414,17 @@ nav {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   transition: 0.3s; }
+
+.home nav {
+  background: #2e2e2d; }
+  @media (min-width: 1024px) {
+    .home nav {
+      background: transparent;
+      position: absolute;
+      height: 110px;
+      top: 0;
+      left: 0;
+      z-index: 99; } }
 
 footer {
   background: #2e2e2d;
@@ -1114,6 +1120,7 @@ header, .text-block {
         font-size: 6em; } }
 
 .button {
+  display: inline-block;
   background: #00a8e2;
   padding: 15px 30px;
   border-radius: 2px;
@@ -1423,7 +1430,7 @@ header, .text-block {
   width: 50%;
   float: left; }
 
-.video {
+.arve-wrapper {
   margin: 40px 0; }
 
 .careers-intro {
@@ -1738,7 +1745,11 @@ aside.login-card {
   position: relative; }
   @media (min-width: 768px) {
     .single-img, .gallery, .single-video {
-      width: 33.3333%; } }
+      width: 33.3333%;
+      padding: 1.4em; } }
+  @media (min-width: 1024px) {
+    .single-img, .gallery, .single-video {
+      padding: 2.5em; } }
   .single-img a, .gallery a, .single-video a {
     position: relative;
     display: table; }
@@ -1751,6 +1762,7 @@ aside.login-card {
       content: '';
       top: 0;
       left: 0;
+      z-index: 2;
       -webkit-transition: 0.25s ease;
       -moz-transition: 0.25s ease;
       transition: 0.25s ease; }
@@ -1759,6 +1771,48 @@ aside.login-card {
       -webkit-transition: 0.25s ease;
       -moz-transition: 0.25s ease;
       transition: 0.25s ease; }
+    .single-img a span, .gallery a span, .single-video a span {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      padding-left: 21px;
+      z-index: 3;
+      color: #ffffff;
+      font-size: 16px;
+      opacity: 0;
+      max-width: 90%;
+      -webkit-transition: 0.25s ease;
+      -moz-transition: 0.25s ease;
+      transition: 0.25s ease; }
+      @media (min-width: 768px) {
+        .single-img a span, .gallery a span, .single-video a span {
+          left: 30px;
+          max-width: 75%; } }
+      .single-img a span:before, .gallery a span:before, .single-video a span:before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        width: 20px;
+        height: 20px;
+        top: 0px;
+        border-radius: 50%;
+        opacity: 0;
+        background: #ffc20e url("/assets/img/icons/btn_arrows.svg") no-repeat center center;
+        -webkit-transition: 0.25s ease;
+        -moz-transition: 0.25s ease;
+        transition: 0.25s ease; }
+    .single-img a:hover > span, .gallery a:hover > span, .single-video a:hover > span {
+      bottom: 20px;
+      opacity: 1;
+      color: #ffc20e;
+      -webkit-transition: 0.25s ease;
+      -moz-transition: 0.25s ease;
+      transition: 0.25s ease; }
+      .single-img a:hover > span:before, .gallery a:hover > span:before, .single-video a:hover > span:before {
+        opacity: 1;
+        -webkit-transition: 0.25s ease;
+        -moz-transition: 0.25s ease;
+        transition: 0.25s ease; }
 
 .single-video a {
   position: relative; }
@@ -1786,11 +1840,19 @@ aside.login-card {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 .gallery:before {
-  content: url(/assets/img/icons/arrow-left.png);
-  left: 35px; }
+  display: none; }
+  @media (min-width: 768px) {
+    .gallery:before {
+      display: block;
+      content: url(/assets/img/icons/arrow-left.png);
+      left: calc(32px + 2.5em); } }
 .gallery:after {
-  content: url(/assets/img/icons/arrow-right.png);
-  right: -10px; }
+  display: none; }
+  @media (min-width: 768px) {
+    .gallery:after {
+      display: block;
+      content: url(/assets/img/icons/arrow-right.png);
+      right: calc(20px - 2.5em); } }
 
 .gallery-filter {
   margin-bottom: 50px; }
@@ -1800,5 +1862,8 @@ aside.login-card {
     display: inline; }
   .gallery-filter button {
     margin: 0 2%; }
+  .gallery-filter p {
+    text-align: center;
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
