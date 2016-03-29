@@ -124,20 +124,21 @@
 			}	
 		}
 	}
-	.left_year {
-		aside {
-			left: auto;
-			right: 0;
+}
+
+.content_stack li:nth-child(even) {
+	aside {
+		left: auto;
+		right: 0;
+	}
+	article {
+		float: left;
+		background: #ECEAE7;
+		h3 {
+			color: darken(#ECEAE7, 30%);
 		}
-		article {
-			float: left;
-			background: #ECEAE7;
-			h3 {
-				color: darken(#ECEAE7, 30%);
-			}
-			p {
-				color: darken(#ECEAE7, 60%);
-			}
+		p {
+			color: darken(#ECEAE7, 60%);
 		}
 	}
 }

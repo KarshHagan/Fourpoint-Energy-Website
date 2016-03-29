@@ -22,7 +22,7 @@
 	</li>
 
 	<!-- START NEW DATE SECTION -->
-	<li class="left_year">
+	<li>
 		<aside data-bg="bg_2"><h3>2003</h3></aside>
 		<article>
 			<p>The core areas for Cordillera Energy Partners I (CEP I) were the Anadarko Basin, the Delaware Basin and the San Juan Basin. Through a combination of acquisitions and drilling, CEP I grew its production to 30 MMCFED, annual cash flow to $35 million, and proved reserves to 250 BCFE by mid-2003. In October 2003, CEP I sold its assets to Patina Oil &amp; Gas for cash and warrants to purchase Patina stock valued at $247 million.</p>
@@ -38,7 +38,7 @@
 	</li>
 
 	<!-- START NEW DATE SECTION -->
-	<li class="left_year">
+	<li>
 		<aside data-bg="bg_4"><h3>2007</h3></aside>
 		<article>
 			<p>Prior to the sale of CEP II, the management team and CEP’s equity investors elected to form CEP III, LLC, while still managing and operating CEP II so as not to lose momentum, opportunities, or talent. In March of 2007, CEP III was formed with a $500 million equity investment from EnCap Investments, along-side institutional investors and management. CEP III also entered into a $600 million, six bank credit facility again led by JP Morgan Chase.</p>
@@ -55,7 +55,7 @@
 	</li>
 
 	<!-- START NEW DATE SECTION -->
-	<li class="left_year"> 
+	<li> 
 		<aside data-bg="bg_6"><h3>2010</h3></aside>
 		<article>
 			<p>CEP III held assets and operations in the Texas Panhandle, Western Oklahoma, and the East Texas Basin. In 2010 Cordillera celebrated its 10th year in business and made plans to form its fourth enterprise centered around the “acquire/exploit” strategy. During this period, the Cordillera management team executed on both small and large producing property and acreage acquisitions totaling over $700 million and has drilled over 235 wells (vertical and horizontal) investing over $300 million.</p>

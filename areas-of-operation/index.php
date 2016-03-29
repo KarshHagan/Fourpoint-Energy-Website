@@ -13,7 +13,14 @@
 	</section>
 </header>
 
-<iframe width="100%" height="640px" class="map-embed" src="http://localhost:8000/map/index.html" frameborder="0" scrolling="no"></iframe>
+<!-- <iframe height="600" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="http://storymaps.esri.com/stories/2015/nation-of-drones/"></iframe> -->
+
+<!-- PRODUCTION: USE THIS IFRAME-->
+<!-- <iframe width="100%" height="640px" class="map-embed" src="http://northpoint.maps.arcgis.com/apps/MapSeries/index.html?appid=9f984ca266ac46c182ff5db964af7094" frameborder="0" scrolling="no"></iframe>
+ -->
+
+<!-- DEVELOPMENT: USE THIS IFRAME -->
+<iframe width="100%" height="640px" class="map-embed" src="http://staging.fourpointenergy.com/map/index.html" frameborder="0" scrolling="no"></iframe>
 
 				
 <?php include($_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?>
