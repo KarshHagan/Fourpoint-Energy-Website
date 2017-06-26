@@ -168,6 +168,36 @@ $(document).ready(function() {
 });
 
 
+
+function Accordions() {
+  this.$accordionTitle = $('.accordion-title');
+  this.openFirst();
+  this.toggleOpenClose();
+}
+
+Accordions.prototype.toggleOpenClose = function() {
+  this.$accordionTitle.on('click', function(e) {
+    var clicked = $(e.target);
+    if(!clicked.hasClass('open')) {    
+      clicked.addClass('open').siblings().slideDown(200);
+      $(this).find('.accordion-plus-minus').attr('src', 'https://fourpointenergy.com/wp-content/uploads/2017/06/icon-minus2x.png');
+      $(this).css('background-color', '#157AA1').parent().css('margin-bottom', 0);
+    }
+    else {
+      clicked.removeClass('open').siblings().slideUp(200);
+      $(this).find('.accordion-plus-minus').attr('src', 'https://fourpointenergy.com/wp-content/uploads/2017/06/icon-plus2x.png');
+      $(this).css({backgroundColor: '#00A2DC', marginBottom: 2 + 'px'});
+    }
+  });
+};
+
+Accordions.prototype.openFirst = function() {
+  $('.accordion-item:first').css({backgroundColor: '#157AA1', marginBottom: 0}).find('.accordion-content').addClass('open').show().prev('.accordion-title').addClass('open').find('.accordion-plus-minus').attr('src', 'https://fourpointenergy.com/wp-content/uploads/2017/06/icon-minus2x.png');
+};
+
+new Accordions();
+
+
 // MAP IFRAME RESIZE PAGE
 
 // var frame = $('#iframe');

@@ -1,0 +1,57 @@
+.accordion-title {
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  padding: 20px 45px 20px 20px;
+  background-color: $teal;
+  text-transform: uppercase;
+  position: relative;
+}
+
+ul.accordion-content {
+  display: none;
+  margin: 0;
+  background-color: #F1F1F1;
+  padding: 20px 30px;
+  li {
+    padding-left: 25px;
+    text-indent: -15px;
+    margin-bottom: 0.8rem;
+    &:before {
+      content: '';
+      background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: -10px;
+      margin-right: 12px;
+      width: 8px;
+      height: 12px;
+      display: inline-block;
+    }
+  }
+}
+
+.accordion-item {
+  margin-bottom: 2px;
+}
+
+ul.list-reset {
+  list-style: none;
+  margin: 100px 0;
+  li {
+    list-style: none; 
+  }
+}
+
+.accordion-plus-minus {
+  max-width: 27px;
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  height: auto;
+  margin: 0 !important;
+  pointer-events: none;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}

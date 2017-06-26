@@ -426,6 +426,59 @@ nav {
       left: 0;
       z-index: 99; } }
 
+.pre-footer {
+  display: table;
+  margin-bottom: 100px; }
+  @media (min-width: 768px) {
+    .pre-footer {
+      margin-left: -6em;
+      margin-right: -6em; } }
+
+@media (min-width: 768px) {
+  .box {
+    width: 50%;
+    float: left;
+    padding: 0 6em; } }
+
+.box-inner {
+  padding: 2em; }
+
+.shadow-border {
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.35); }
+
+.pf-icon {
+  display: block;
+  max-width: 30px;
+  margin: 20px auto; }
+
+.text-arrow-link {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #00a8e2;
+  padding: 0;
+  padding-left: 30px;
+  line-height: 12px;
+  position: relative;
+  font-weight: 700;
+  line-height: 22px;
+  display: block;
+  -webkit-transition: color 0.3 ease;
+  -moz-transition: color 0.3 ease;
+  transition: color 0.3 ease; }
+  .text-arrow-link:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0px;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    background: #00a8e2 url(https://fourpointenergy.com/wp-content/uploads/2016/04/btn_arrows.png) no-repeat center center;
+    border-radius: 50%; }
+
 footer {
   background: #2e2e2d;
   padding: 25px 0; }
@@ -1880,5 +1933,55 @@ aside.login-card {
   .gallery-filter p {
     text-align: center;
     font-weight: 700; }
+
+.accordion-title {
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  padding: 20px 45px 20px 20px;
+  background-color: #00A2DC;
+  text-transform: uppercase;
+  position: relative; }
+
+ul.accordion-content {
+  display: none;
+  margin: 0;
+  background-color: #F1F1F1;
+  padding: 20px 30px; }
+  ul.accordion-content li {
+    padding-left: 25px;
+    text-indent: -15px;
+    margin-bottom: 0.8rem; }
+    ul.accordion-content li:before {
+      content: '';
+      background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: -10px;
+      margin-right: 12px;
+      width: 8px;
+      height: 12px;
+      display: inline-block; }
+
+.accordion-item {
+  margin-bottom: 2px; }
+
+ul.list-reset {
+  list-style: none;
+  margin: 100px 0; }
+  ul.list-reset li {
+    list-style: none; }
+
+.accordion-plus-minus {
+  max-width: 27px;
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  height: auto;
+  margin: 0 !important;
+  pointer-events: none;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
 
 /*# sourceMappingURL=style.css.map */
