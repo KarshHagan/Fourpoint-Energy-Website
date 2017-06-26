@@ -1,18 +1,22 @@
 // pre-footer style
-
 .pre-footer {
 	display: table;
-	margin-bottom: 100px;
-	@media (min-width: 768px) {
-		margin-left: -6em;
-		margin-right: -6em;
-	}
+	margin: 0 auto 70px;
+	width: 100%;
 }
 .box {
+	text-align: center;
+	margin-bottom: 30px;
 	@media (min-width: 768px) {
 		width: 50%;
 		float: left;
-		padding: 0 6em;
+		padding: 0 4em;
+	}
+	h4 {
+		text-align: center;
+		text-transform: uppercase;
+    margin-bottom: 21px;
+    font-size: 16px;
 	}
 }
 
@@ -41,10 +45,10 @@
 	position: relative;
 	font-weight: 700;
 	line-height: 22px;
-	display: block;
-	-webkit-transition: color 0.3 ease;
-	-moz-transition: color 0.3 ease;
-	transition: color 0.3 ease;
+	display: inline-block;
+	-webkit-transition: all 0.3 ease;
+	-moz-transition: all 0.3 ease;
+	transition: all 0.3 ease;
 
 	&:before {
     content: '';
@@ -53,11 +57,19 @@
     height: 20px;
     left: 0;
     top: 0px;
-    -webkit-transition: all 0.3 ease;
-    -moz-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    background: #00a8e2 url(https://fourpointenergy.com/wp-content/uploads/2016/04/btn_arrows.png) no-repeat center center;
+    background-image: url(https://fourpointenergy.com/wp-content/uploads/2016/04/btn_arrows.png);
+    background-color: #00a8e2;
+    background-repeat: no-repeat;
+		-webkit-transition: all 0.3 ease;
+		-moz-transition: all 0.3 ease;
+		transition: all 0.3 ease;
     border-radius: 50%;
+	}
+	&:hover {
+		color: #ffc20e;
+		&:before {
+			background-color: #ffc20e;
+		}
 	}
 }
 
