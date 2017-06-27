@@ -25,7 +25,18 @@
 }
 
 .three-width-box {
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flexbox;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
   li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     @media(min-width: 620px) {
       width: 50%;
     }

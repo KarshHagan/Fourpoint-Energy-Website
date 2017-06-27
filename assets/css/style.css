@@ -2039,12 +2039,25 @@ ul.list-reset {
       top: 21px;
       height: auto; }
 
-@media (min-width: 620px) {
+.three-width-box {
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flexbox;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center; }
   .three-width-box li {
-    width: 50%; } }
-@media (min-width: 1000px) {
-  .three-width-box li {
-    width: 33.33%; } }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (min-width: 620px) {
+      .three-width-box li {
+        width: 50%; } }
+    @media (min-width: 1000px) {
+      .three-width-box li {
+        width: 33.33%; } }
 
 .box-inner {
   margin: 1rem;
@@ -2058,5 +2071,29 @@ ul.list-reset {
     font-size: 21px; }
   .box-inner p {
     padding: 5px 20px 20px; }
+
+.multicolumn {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px; }
+
+.county-list .box-inner {
+  margin: 0;
+  padding: 0; }
+  .county-list .box-inner ul {
+    padding: 2rem; }
+.county-list h5 {
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  color: white;
+  padding: 20px 45px 20px 20px;
+  background-color: #00A2DC;
+  text-transform: uppercase;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
