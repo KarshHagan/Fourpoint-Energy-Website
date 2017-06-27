@@ -78,6 +78,12 @@
 footer {
 	background: $dark_gray;
 	padding: 25px 0;
+	// fix footer to bottom
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	// end
 	section {
 		@include outer-container;
 		@include clearfix;

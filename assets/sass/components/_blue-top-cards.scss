@@ -1,0 +1,52 @@
+.counter {
+  font-size: 0;
+  margin: 0;
+  li {
+    counter-increment: number-counter;
+    position: relative;
+    margin-bottom: 15px;
+    line-height: 1.25;
+    font-weight: 600;
+    // padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    &:before {
+      content: counter(number-counter);
+      font-weight: 700;
+      height: 100%;
+      position: absolute;
+      left: 35px;
+      color: #00A2DC;
+      font-size: 30px;
+      top: 21px;
+      height: auto;
+    }
+  }
+}
+
+.three-width-box {
+  li {
+    @media(min-width: 620px) {
+      width: 50%;
+    }
+    @media(min-width: 1000px) {
+      width: 33.33%;
+    }
+  }
+}
+
+.box-inner {
+  margin: 1rem;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.35);
+  h3 {
+    background-color: rgba(0, 162, 220, 0.1);
+    padding: 45px 20px 35px;
+    text-transform: uppercase;
+    color: #444444;
+    font-weight: bold;
+    font-size: 21px;
+  }
+  p {
+    padding: 5px 20px 20px;
+  }
+}

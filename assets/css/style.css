@@ -72,20 +72,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body, html {
   font-weight: 400;
   line-height: 1.7em;
-  height: 100%;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   color: #2e2e2d;
-  position: relative;
   background: #ffffff;
   -webkit-font-smoothing: antialiased; }
 
+/*
+  fixed bottom footer styles
+
+  html { height: 100%; }
+  body {
+      min-height:100%;  
+      position:relative;  or maybe static? 
+      padding-bottom:[footer-height] 
+  }
+  .footer { 
+      position: absolute; 
+      left: 0 ; right: 0; bottom: 0; 
+      height:[footer-height] 
+  }
+
+*/
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 250px;
+  min-height: 100%; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 100%; }
 
 img {
   margin: 0 auto;
@@ -492,7 +510,11 @@ nav {
 
 footer {
   background: #2e2e2d;
-  padding: 25px 0; }
+  padding: 25px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
   footer section {
     max-width: 1100px;
     margin-left: auto;
@@ -1994,5 +2016,47 @@ ul.list-reset {
   pointer-events: none;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%); }
+
+.counter {
+  font-size: 0;
+  margin: 0; }
+  .counter li {
+    counter-increment: number-counter;
+    position: relative;
+    margin-bottom: 15px;
+    line-height: 1.25;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    display: inline-block; }
+    .counter li:before {
+      content: counter(number-counter);
+      font-weight: 700;
+      height: 100%;
+      position: absolute;
+      left: 35px;
+      color: #00A2DC;
+      font-size: 30px;
+      top: 21px;
+      height: auto; }
+
+@media (min-width: 620px) {
+  .three-width-box li {
+    width: 50%; } }
+@media (min-width: 1000px) {
+  .three-width-box li {
+    width: 33.33%; } }
+
+.box-inner {
+  margin: 1rem;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.35); }
+  .box-inner h3 {
+    background-color: rgba(0, 162, 220, 0.1);
+    padding: 45px 20px 35px;
+    text-transform: uppercase;
+    color: #444444;
+    font-weight: bold;
+    font-size: 21px; }
+  .box-inner p {
+    padding: 5px 20px 20px; }
 
 /*# sourceMappingURL=style.css.map */
