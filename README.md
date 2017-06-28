@@ -1,6 +1,7 @@
 To compile SCSS:
 #sass --watch assets/css/style.scss:assets/css/style.css
-sass --watch assets/sass/.
+sass --watch assets/sass/style.scss:assets/css/style.css
+
 
 To run a server: 
 php -S localhost:8000

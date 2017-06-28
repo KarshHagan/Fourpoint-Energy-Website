@@ -1,4 +1,4 @@
-.county-list {
+.solid-top-cards {
   .box-inner {
     margin: 0;
     padding: 0 0 2em 0;
@@ -8,7 +8,7 @@
         position: relative;
         list-style-type: none;
         float: left;
-        width: 47%;
+        width: 100%;
         // text-indent: -10px;
         word-wrap: break-word;
         margin: 0 3% 2% 0;
@@ -38,5 +38,39 @@
     background-color: $teal;
     text-transform: uppercase;
     position: relative;
+  }
+}
+
+.multi-column {
+  li {
+    width: 47% !important;
+  }
+}
+
+.ownership-cards {
+  .box-inner {
+    ul {
+      li {
+        margin: 0 3% 7% 0;
+      }
+    }
+  }
+}
+
+.three-width-box {
+  li:before {
+    display: none;
+  }
+}
+
+.box-top {
+  height: 125px;
+  background-color: orange;
+  display: table;
+  width: 100%;
+  h3 {
+    font-size: 16px;
+    display: table-cell;
+    vertical-align: middle;
   }
 }

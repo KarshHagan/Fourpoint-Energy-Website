@@ -1,0 +1,12 @@
+.bg-img-boxes {
+  margin-top: 65px;
+  .box-inner {
+    border-top: 4px solid $teal;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h3 {
+      background-color: transparent;
+    }
+
+  }
+}

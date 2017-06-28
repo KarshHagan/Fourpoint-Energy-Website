@@ -2063,8 +2063,6 @@ ul.list-reset {
   margin: 1rem;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.35); }
   .box-inner h3 {
-    background-color: rgba(0, 162, 220, 0.1);
-    padding: 45px 20px 35px;
     text-transform: uppercase;
     color: #444444;
     font-weight: bold;
@@ -2072,20 +2070,20 @@ ul.list-reset {
   .box-inner p {
     padding: 5px 20px 20px; }
 
-.county-list .box-inner {
+.solid-top-cards .box-inner {
   margin: 0;
   padding: 0 0 2em 0; }
-  .county-list .box-inner ul {
+  .solid-top-cards .box-inner ul {
     padding: 2rem; }
-    .county-list .box-inner ul li {
+    .solid-top-cards .box-inner ul li {
       position: relative;
       list-style-type: none;
       float: left;
-      width: 47%;
+      width: 100%;
       word-wrap: break-word;
       margin: 0 3% 2% 0;
       padding-left: 3%; }
-      .county-list .box-inner ul li:before {
+      .solid-top-cards .box-inner ul li:before {
         content: '';
         background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
         background-repeat: no-repeat;
@@ -2095,7 +2093,7 @@ ul.list-reset {
         position: absolute;
         left: -10px;
         top: 4px; }
-.county-list h5 {
+.solid-top-cards h5 {
   font-weight: bold;
   font-size: 18px;
   width: 100%;
@@ -2105,5 +2103,33 @@ ul.list-reset {
   background-color: #00A2DC;
   text-transform: uppercase;
   position: relative; }
+
+.multi-column li {
+  width: 47% !important; }
+
+.ownership-cards .box-inner ul li {
+  margin: 0 3% 7% 0; }
+
+.three-width-box li:before {
+  display: none; }
+
+.box-top {
+  height: 125px;
+  background-color: orange;
+  display: table;
+  width: 100%; }
+  .box-top h3 {
+    font-size: 16px;
+    display: table-cell;
+    vertical-align: middle; }
+
+.bg-img-boxes {
+  margin-top: 65px; }
+  .bg-img-boxes .box-inner {
+    border-top: 4px solid #00A2DC;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .bg-img-boxes .box-inner h3 {
+      background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
