@@ -1977,16 +1977,16 @@ aside.login-card {
   text-transform: uppercase;
   position: relative; }
 
-ul.accordion-content {
+ul.accordion-content, .accordion-item p {
   display: none;
   margin: 0;
   background-color: #F1F1F1;
   padding: 20px 30px; }
-  ul.accordion-content li {
+  ul.accordion-content li, .accordion-item p li {
     padding-left: 25px;
     text-indent: -15px;
     margin-bottom: 0.8rem; }
-    ul.accordion-content li:before {
+    ul.accordion-content li:before, .accordion-item p li:before {
       content: '';
       background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
       background-repeat: no-repeat;
@@ -2072,26 +2072,36 @@ ul.list-reset {
   .box-inner p {
     padding: 5px 20px 20px; }
 
-.multicolumn {
-  -moz-column-count: 2;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
-  column-count: 2;
-  column-gap: 20px; }
-
 .county-list .box-inner {
   margin: 0;
-  padding: 0; }
+  padding: 0 0 2em 0; }
   .county-list .box-inner ul {
     padding: 2rem; }
+    .county-list .box-inner ul li {
+      position: relative;
+      list-style-type: none;
+      float: left;
+      width: 47%;
+      word-wrap: break-word;
+      margin: 0 3% 2% 0;
+      padding-left: 3%; }
+      .county-list .box-inner ul li:before {
+        content: '';
+        background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 8px;
+        height: 12px;
+        position: absolute;
+        left: -10px;
+        top: 4px; }
 .county-list h5 {
   font-weight: bold;
   font-size: 18px;
   width: 100%;
   display: block;
   color: white;
-  padding: 20px 45px 20px 20px;
+  padding: 30px 45px;
   background-color: #00A2DC;
   text-transform: uppercase;
   position: relative; }

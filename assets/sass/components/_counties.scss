@@ -1,18 +1,31 @@
-.multicolumn {
-  -moz-column-count: 2;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
-  column-count: 2;
-  column-gap: 20px;
-}
-
 .county-list {
   .box-inner {
     margin: 0;
-    padding: 0;
+    padding: 0 0 2em 0;
     ul {
       padding: 2rem;
+      li {
+        position: relative;
+        list-style-type: none;
+        float: left;
+        width: 47%;
+        // text-indent: -10px;
+        word-wrap: break-word;
+        margin: 0 3% 2% 0;
+        padding-left: 3%;
+
+        &:before {
+          content: '';
+          background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 8px;
+          height: 12px;
+          position: absolute;
+          left: -10px;
+          top: 4px;
+        }
+      }
     }
   }
   h5 {
@@ -21,7 +34,7 @@
     width: 100%;
     display: block;
     color: white;
-    padding: 20px 45px 20px 20px;
+    padding: 30px 45px;
     background-color: $teal;
     text-transform: uppercase;
     position: relative;
