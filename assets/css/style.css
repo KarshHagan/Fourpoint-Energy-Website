@@ -2048,15 +2048,15 @@ ul.list-reset {
   -ms-flex-wrap: wrap;
   justify-content: center;
   -webkit-justify-content: center; }
-  .three-width-box li {
+  .three-width-box > li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     @media (min-width: 620px) {
-      .three-width-box li {
+      .three-width-box > li {
         width: 50%; } }
     @media (min-width: 1000px) {
-      .three-width-box li {
+      .three-width-box > li {
         width: 33.33%; } }
 
 .box-inner {
@@ -2110,18 +2110,44 @@ ul.list-reset {
 .ownership-cards .box-inner ul li {
   margin: 0 3% 7% 0; }
 
-.three-width-box li:before {
-  display: none; }
-
 .box-top {
   height: 125px;
-  background-color: orange;
+  background-color: rgba(0, 162, 220, 0.1);
   display: table;
-  width: 100%; }
+  width: 100%;
+  padding-top: 10px; }
   .box-top h3 {
     font-size: 16px;
     display: table-cell;
-    vertical-align: middle; }
+    padding: 0 24px;
+    vertical-align: middle;
+    color: #444444; }
+
+.three-width-box.ownership .box-inner {
+  width: 100%; }
+  .three-width-box.ownership .box-inner ul {
+    margin: 25px 20px 0 25px;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    padding-left: 5px; }
+    .three-width-box.ownership .box-inner ul:before {
+      content: '';
+      background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 8px;
+      height: 12px;
+      position: absolute;
+      left: -10px;
+      top: 4px; }
+.three-width-box.ownership li:before {
+  display: none; }
+.three-width-box.ownership .box-top {
+  padding-top: 0; }
+  .three-width-box.ownership .box-top h3 {
+    color: white;
+    background-color: #4A4A4A; }
 
 .bg-img-boxes {
   margin-top: 65px; }
@@ -2130,6 +2156,7 @@ ul.list-reset {
     background-repeat: no-repeat;
     background-size: cover; }
     .bg-img-boxes .box-inner h3 {
-      background-color: transparent; }
+      background-color: transparent;
+      padding: 50px 25px 0; }
 
 /*# sourceMappingURL=style.css.map */
