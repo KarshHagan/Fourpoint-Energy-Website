@@ -2057,7 +2057,7 @@ ul.list-reset {
         width: 50%; } }
     @media (min-width: 1000px) {
       .three-width-box > li {
-        width: 33.33%; } }
+        width: 33.33333333%; } }
 
 .box-inner {
   margin: 1rem;
@@ -2104,6 +2104,21 @@ ul.list-reset {
   text-transform: uppercase;
   position: relative; }
 
+.bullet-list li {
+  position: relative;
+  display: block; }
+  .bullet-list li:after {
+    content: ' ';
+    background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
+    background-repeat: no-repeat;
+    background-size: 8px 12px;
+    width: 8px;
+    height: 12px;
+    position: absolute;
+    left: -12px;
+    top: 4px;
+    display: block; }
+
 .multi-column li {
   width: 47% !important; }
 
@@ -2131,16 +2146,6 @@ ul.list-reset {
     font-family: 'Source Sans Pro', sans-serif;
     position: relative;
     padding-left: 5px; }
-    .three-width-box.ownership .box-inner ul:before {
-      content: '';
-      background: url(https://fourpointenergy.com/wp-content/uploads/2017/06/arrow-bullet2x.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 8px;
-      height: 12px;
-      position: absolute;
-      left: -10px;
-      top: 4px; }
 .three-width-box.ownership li:before {
   display: none; }
 .three-width-box.ownership .box-top {
